@@ -1,0 +1,170 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BlocklyDuino</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/blockly_compressed.js"></script>
+  <script type="text/javascript" src="js/blocks_compressed.js"></script>
+  <script type="text/javascript" src="js/arduino_compressed.js"></script>
+  <script type="text/javascript" src="js/Blob.js"></script>
+  <script type="text/javascript" src="js/spin.js"></script>
+  <script type="text/javascript" src="js/FileSaver.min.js"></script>
+  <script type="text/javascript" src="js/blockly_helper.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/compilerflasher.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+</head>
+
+<body>
+  <select id="languageMenu" onchange="change_lang(this)">
+    <option value="en">English</option>
+    <option value="ja">日本語</option>
+    <option value="ja_kids">にほんご</option>
+  </select>
+
+  <table height="100%" width="100%">
+    <tr>
+      <td>
+        <h1><a href="https://github.com/okhiroyuki/BlocklyDuino">BlocklyDuino</a> &gt; web-based visual programming editor for arduino</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table id="tab" width="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon" onclick="tabClick('blocks')">Blocks</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_arduino" class="taboff" onclick="tabClick('arduino')"></td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_term" class="taboff" onclick="tabClick('term')">Console</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_xml" class="taboff" onclick="tabClick('xml')"></td>
+            <td class="tabmax">
+              <button id="copy-button" data-clipboard-target="textarea_arduino" data-clipboard-text="Clip Me!">Code Copy</button>
+              <button id="discard" onclick="discard()">Discard</button>
+              <button id="save" onclick="save()"></button>
+              <button id="fakeload"></button>
+              <input type="file" id="load" style="display: none;" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="99%" id="content_area"></td>
+    </tr>
+  </table>
+  <div id="content_blocks" class="content"></div>
+  <div id="content_arduino" class="content" readonly wrap="off">
+    <select id="cb_cf_boards"></select>
+    <select id="cb_cf_ports"></select>
+    <select id="cb_cf_programmers"> </select>
+    <button id="cb_cf_verify_btn" class="btn btn-success">Verify code</button>
+    <button id="cb_cf_flash_btn" class="btn btn-success">Flash Arduino</button>
+    <textarea id="textarea_arduino"></textarea>
+    <p id="cb_cf_operation_output"></p>
+    <div id="debug_arduino"></div>
+  </div>
+  <div id="content_term" class="content">
+    <div id="cb_cf_band">
+      <select id="cb_cf_baud_rates"></select>
+      <button id="cb_cf_serial_monitor_connect">Serial Monitor connect</button>
+    </div>
+    <div id="cb_cf_serial_monitor"></div>
+    <div id="serial_hud"></div>
+  </div>
+  <textarea id="content_xml" class="content" wrap="off"></textarea>
+
+  <xml id="toolbox" style="display: none">
+    <category id="category_inout">
+      <block type="inout_highlow"></block>
+      <block type="inout_digital_write"></block>
+      <block type="inout_digital_read"></block>
+      <block type="inout_analog_write">
+        <value name="NUM">
+          <block type="math_number">
+            <field name="NUM">255</field>
+          </block>
+        </value>
+      </block>
+      <block type="inout_analog_read"></block>
+      <block type="pulsein"></block>
+      <block type="tone"></block>
+      <block type="custom_tone"></block>
+    </category>
+    <category id="category_ultrasonic">
+      <block type="ultrasonic_setting"></block>
+      <block type="ultrasonic_maxrange"></block>
+      <block type="ultrasonic_distance"></block>
+    </category>
+    <category id="category_serial">
+      <block type="serial_available"></block>
+      <block type="serial_print"></block>
+      <block type="serial_println"></block>
+      <block type="serial_read"></block>
+    </category>
+    <sep></sep>
+    <category id="category_logic">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_boolean"></block>
+    </category>
+    <category id="category_loops">
+      <block type="controls_repeat"></block>
+      <block type="controls_for">
+        <value name="FROM">
+          <block type="math_number">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+      </block>
+      <block type="controls_whileUntil"></block>
+      <block type="controls_flow_statements"></block>
+    </category>
+    <category id="category_time">
+      <block type="millis"></block>
+      <block type="micros"></block>
+      <block type="delay"></block>
+      <block type="delayMicroseconds"></block>
+    </category>
+    <category id="category_math">
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+      <block type="math_single"></block>
+      <block type="math_constrain"></block>
+      <block type="math_pow"></block>
+      <block type="math_random_max_min"></block>
+      <block type="math_map"></block>
+      <block type="math_custom_map"></block>
+    </category>
+    <category id="category_text">
+      <block type="text"></block>
+    </category>
+    <sep></sep>
+    <!--category id="category_variables" custom="VARIABLE"-->
+    <category id="category_variables">
+      <block type="variables_set"></block>
+      <block type="variables_get"></block>
+    </category>
+    <category id="category_functions" custom="PROCEDURE"></category>
+    <sep></sep>
+    <category id="category_involt">
+      <block type="involt_directmode"></block>
+      <block type="involt_chromereceive"></block>
+      <block type="involt_sendvalue"></block>
+      <block type="involt_receivevalue"></block>
+    </category>
+  </xml>
+</body>
+
+</html>
