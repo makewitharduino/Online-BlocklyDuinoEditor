@@ -150,7 +150,6 @@ function init() {
     toolbox: toolbox});
 
   var id = getid();
-  console.log(id);
   if(id){
     loadxml(id);
   }
