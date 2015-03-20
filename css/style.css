@@ -103,7 +103,13 @@ button:hover {
 #languageMenu {
   position: absolute;
   top: 10;
-  right: 20;
+  right: 90;
+}
+
+#button_sample{
+  position: absolute;
+  top: 10;
+  right: 5;
 }
 
 button#fakeload {
