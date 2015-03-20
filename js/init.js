@@ -149,13 +149,7 @@ function init() {
     media: '../../media/',
     toolbox: toolbox});
 
-  var id = getid();
-  if(id){
-    loadxml(id);
-  }
-  else{
     auto_save_and_restore_blocks();
-  }
 
   //load from url parameter (single param)
   //http://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
@@ -236,7 +230,8 @@ function loadfile() {
   }, false);
 };
 
-function loadxml(id){
+function loadxml(){
+  var id = getid();
   var pass = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
   console.log(pass);
   $.ajax({
@@ -329,7 +324,7 @@ function setScript() {
     loadfile();
     clipboard();
     init();
-    //loadxml();
+    loadxml();
   }
 }
 
