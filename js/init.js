@@ -148,13 +148,14 @@ function init() {
      snap: true},
     media: '../../media/',
     toolbox: toolbox});
-  /*
-    media: '../../media/',
-    toolbox: toolbox
-  });
-  */
 
-  auto_save_and_restore_blocks();
+  var id = getid();
+  if(id){
+    loadxml(id);
+  }
+  else{
+    auto_save_and_restore_blocks();
+  }
 
   //load from url parameter (single param)
   //http://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
@@ -235,6 +236,45 @@ function loadfile() {
   }, false);
 };
 
+function loadxml(id){
+  var pass = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
+  console.log(pass);
+  $.ajax({
+    url: pass,
+    type: "GET",
+    dataType: 'text',
+    success: function(res) {
+      var obj = document.getElementById("content_xml");
+      var xml = res.responseText;
+      if(xml.length >0){
+        document.getElementById('tab_xml').className = 'tabon';
+        document.getElementById('tab_blocks').className = 'taboff';
+        document.getElementById('content_xml').style.visibility = 'visible';
+        renderContent();
+        xml = xml.replace("<html><head/><body><xml>",'');
+        xml = xml.replace("</body></html>",'');
+        xml = '<xml xmlns="http://www.w3.org/1999/xhtml">' + xml;
+        obj.value = xml;
+      }
+    }
+  });
+};
+
+
+function getid() {
+  var url = location.href;
+  var parameters = url.split("?");
+  var params = parameters[1].split("&");
+  var paramsArray = [];
+  for (var i = 0; i < params.length; i++) {
+    var neet = params[i].split("=");
+    paramsArray.push(neet[0]);
+    paramsArray[neet[0]] = neet[1];
+  }
+  var categoryKey = paramsArray["id"];
+  return categoryKey;
+}
+
 function clipboard() {
   var client = new ZeroClipboard(document.getElementById("copy-button"));
   client.on("ready", function (readyEvent) {
@@ -289,6 +329,7 @@ function setScript() {
     loadfile();
     clipboard();
     init();
+    //loadxml();
   }
 }
 
