@@ -17,6 +17,7 @@ Blockly.Msg.CATEGORY_GROVE_LCD = "Grove LCD";
 Blockly.Msg.CATEGORY_GROVE_MOTOR = "Grove モーター";
 Blockly.Msg.CATEGORY_INOUT = "ピン制御";
 Blockly.Msg.CATEGORY_INVOLT = "involt";  // untranslated
+Blockly.Msg.CATEGORY_LCD = "LCD";
 Blockly.Msg.CATEGORY_LOGIC = "制御";
 Blockly.Msg.CATEGORY_LOOPS = "繰り返し";
 Blockly.Msg.CATEGORY_MATH = "算数";
@@ -90,7 +91,7 @@ Blockly.Msg.DELETE_BLOCK = "ブロックを消す";
 Blockly.Msg.DELETE_X_BLOCKS = "%1 個のブロックを消す";
 Blockly.Msg.DISABLE_BLOCK = "ブロックを無効にします。";
 Blockly.Msg.DISCARD = "初期化";
-Blockly.Msg.DO = "レ";
+Blockly.Msg.DO = "ド";
 Blockly.Msg.DUPLICATE_BLOCK = "複製";
 Blockly.Msg.ENABLE_BLOCK = "ブロックを有効にします。";
 Blockly.Msg.EXPAND_ALL = "ブロックを展開します。";
@@ -127,6 +128,31 @@ Blockly.Msg.INOUT_TONE_APPENDTEXT_FREQ = "音色";
 Blockly.Msg.INOUT_TONE_APPENDTEXT_PIN = "音を鳴らす ピン";
 Blockly.Msg.INOUT_TONE_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=2462";
 Blockly.Msg.INOUT_TONE_TOOLTIP = "出力ピンに圧電ブザーやスピーカに接続することで、一定ピッチの音を再生できます。";
+Blockly.Msg.LCD_BEGIN_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=967";
+Blockly.Msg.LCD_BEGIN_TITLE = "LCDの初期設定";
+Blockly.Msg.LCD_BEGIN_TOOLTIP = "ディスプレイの桁数と行数を指定します。";
+Blockly.Msg.LCD_CLEAR_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=977";
+Blockly.Msg.LCD_CLEAR_TITLE = "LCDの初期化";
+Blockly.Msg.LCD_CLEAR_TOOLTIP = "LCDの画面をクリアし、カーソルを左上の角に移動させます。";
+Blockly.Msg.LCD_COL = "桁";
+Blockly.Msg.LCD_INIT_D4 = "D4";
+Blockly.Msg.LCD_INIT_D5 = "D5";
+Blockly.Msg.LCD_INIT_D6 = "D6";
+Blockly.Msg.LCD_INIT_D7 = "D7";
+Blockly.Msg.LCD_INIT_D8 = "D8";
+Blockly.Msg.LCD_INIT_ENABLE = "enable";
+Blockly.Msg.LCD_INIT_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=926";
+Blockly.Msg.LCD_INIT_RS = "rs";
+Blockly.Msg.LCD_INIT_RW = "rw";
+Blockly.Msg.LCD_INIT_TITLE = "LCDのピン設定";
+Blockly.Msg.LCD_INIT_TOOLTIP = "LiquidCrystal型の変数を生成します。";
+Blockly.Msg.LCD_PRINT_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=1026";
+Blockly.Msg.LCD_PRINT_TITLE = "LCDへの表示";
+Blockly.Msg.LCD_PRINT_TOOLTIP = "テキストをLCDに表示します。";
+Blockly.Msg.LCD_ROW = "行";
+Blockly.Msg.LCD_SETCURSOR_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=987";
+Blockly.Msg.LCD_SETCURSOR_TITLE = "LCDのカーソル設定";
+Blockly.Msg.LCD_SETCURSOR_TOOLTIP = "カーソルの位置を指定します。続くテキストは、その位置から表示されます。";
 Blockly.Msg.LISTS_CREATE_EMPTY_HELPURL = "https://en.wikipedia.org/wiki/Linked_list#Empty_lists";
 Blockly.Msg.LISTS_CREATE_EMPTY_TITLE = "空のリストを作成します。";
 Blockly.Msg.LISTS_CREATE_EMPTY_TOOLTIP = "長さゼロ、データ レコード空のリストを返します";
@@ -362,7 +388,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TITLE = "入力名:";
 Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  // untranslated
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "入力";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
-Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.RE = "レ";
 Blockly.Msg.REMOVE_COMMENT = "コメントを削除します。";
 Blockly.Msg.RENAME_VARIABLE = "変数の名前を変更.";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "%1の変数すべてを名前変更します。";
@@ -379,6 +405,7 @@ Blockly.Msg.SERIAL_PRINT_TOOLTIP = "人が読むことのできる形式(ASCII�
 Blockly.Msg.SERIAL_READ_APPENDTEXT = "シリアル読み込み";
 Blockly.Msg.SERIAL_READ_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=3248";
 Blockly.Msg.SERIAL_READ_TOOLTIP = "受信データを読み込みます。 ";
+Blockly.Msg.TERM = "ターミナル";
 Blockly.Msg.TEXT_APPEND_APPENDTEXT = "テキストを追加します。";
 Blockly.Msg.TEXT_APPEND_HELPURL = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
 Blockly.Msg.TEXT_APPEND_TO = "代入";

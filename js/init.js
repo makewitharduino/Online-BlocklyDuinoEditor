@@ -70,12 +70,6 @@ function renderContent() {
     xmlTextarea.value = xmlText;
     xmlTextarea.focus();
     button.style.display = "none";
-    /*} else if (content.id == 'content_javascript') {
-    content.innerHTML = Blockly.JavaScript.workspaceToCode();
-  } else if (content.id == 'content_dart') {
-    content.innerHTML = Blockly.Dart.workspaceToCode();
-  } else if (content.id == 'content_python') {
-    content.innerHTML = Blockly.Python.workspaceToCode();*/
   } else if (content.id == 'content_arduino') {
     //content.innerHTML = Blockly.Arduino.workspaceToCode();
     var arduinoTextarea = document.getElementById('textarea_arduino');
@@ -146,7 +140,8 @@ function init() {
      length: 3,
      colour: '#ccc',
      snap: true},
-    media: '../../media/',
+    //media: 'media/',
+    media: filepath.media,
     toolbox: toolbox});
 
     auto_save_and_restore_blocks();
@@ -165,22 +160,12 @@ function setCharacter() {
   category.setAttribute("name", Blockly.Msg.CATEGORY_INOUT);
   category = document.getElementById('category_serial');
   category.setAttribute("name", Blockly.Msg.CATEGORY_SERIAL);
-  /*
-  category = document.getElementById('category_servo');
-  category.setAttribute("name",Blockly.Msg.CATEGORY_SERVO);
-  category = document.getElementById('category_grove_analog');
-  category.setAttribute("name",Blockly.Msg.CATEGORY_GROVE_ANALOG);
-  category = document.getElementById('category_grove');
-  category.setAttribute("name",Blockly.Msg.CATEGORY_GROVE);
-  category = document.getElementById('category_grove_lcd');
-  category.setAttribute("name",Blockly.Msg.CATEGORY_GROVE_LCD);
-  category = document.getElementById('category_grove_motor');
-  category.setAttribute("name",Blockly.Msg.CATEGORY_GROVE_MOTOR);
-  */
   category = document.getElementById('category_logic');
   category.setAttribute("name", Blockly.Msg.CATEGORY_LOGIC);
   category = document.getElementById('category_ultrasonic');
   category.setAttribute("name", Blockly.Msg.CATEGORY_ULTRA_SONIC);
+  category = document.getElementById('category_lcd');
+  category.setAttribute("name", Blockly.Msg.CATEGORY_LCD);
   category = document.getElementById('category_loops');
   category.setAttribute("name", Blockly.Msg.CATEGORY_LOOPS);
   category = document.getElementById('category_time');
@@ -232,8 +217,8 @@ function loadfile() {
 
 function loadxml(){
   var id = getid();
+  if(typeof id === "undefined") return;
   var pass = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
-  console.log(pass);
   $.ajax({
     url: pass,
     type: "GET",
@@ -304,13 +289,17 @@ function setScript() {
   var c = $.cookie("lang");
   if(c) var param = c;
   else param = getParam();
+  script.src = filepath["msg_"+param];
+  /*
   if (param == "ja") {
-    script.src = "../../msg/js/ja.js";
+    script.src = "/msg/js/ja.js";
   } else if(param == "ja_kids"){
-    script.src = "../../msg/js/ja_kids.js";
+    script.src = "/msg/js/ja_kids.js";
   }else{
-    script.src = "../../msg/js/en.js";
+    script.src = "/msg/js/en.js";
   }
+  */
+
   var options = document.getElementById('languageMenu');
   for(var i=0;i<options.length;i++){
     if(options[i].value == param){

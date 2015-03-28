@@ -1,22 +1,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>BlocklyDuino</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="js/blockly_compressed.js"></script>
-  <script type="text/javascript" src="js/blocks_compressed.js"></script>
-  <script type="text/javascript" src="js/arduino_compressed.js"></script>
-  <script type="text/javascript" src="js/Blob.js"></script>
-  <script type="text/javascript" src="js/spin.js"></script>
-  <script type="text/javascript" src="js/FileSaver.min.js"></script>
-  <script type="text/javascript" src="js/blockly_helper.js"></script>
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.cookie.js"></script>
-  <script type="text/javascript" src="js/jquery.xdomainajax.js"></script>
-  <script type="text/javascript" src="js/compilerflasher.js"></script>
-  <script type="text/javascript" src="js/init.js"></script>
-  <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+  <script type="text/javascript" src="header.js"></script>
 </head>
 
 <body>
@@ -113,6 +98,13 @@
       <block type="serial_print"></block>
       <block type="serial_println"></block>
       <block type="serial_read"></block>
+    </category>
+    <category id="category_lcd">
+      <block type="lcd_init"></block>
+      <block type="lcd_begin"></block>
+      <block type="lcd_print"></block>
+      <block type="lcd_setcursor"></block>
+      <block type="lcd_clear"></block>
     </category>
     <sep></sep>
     <category id="category_logic">
