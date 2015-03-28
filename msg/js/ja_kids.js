@@ -148,7 +148,7 @@ Blockly.Msg.LCD_INIT_TOOLTIP = "ディスプレイをつかえるようにしま
 Blockly.Msg.LCD_PRINT_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=1026";
 Blockly.Msg.LCD_PRINT_TITLE = "ディスプレイにもじをかく";
 Blockly.Msg.LCD_PRINT_TOOLTIP = "ディスプレイにもじをひょうじさせます。";
-Blockly.Msg.LCD_ROW = "ぎょう";
+Blockly.Msg.LCD_ROW = "れつ";
 Blockly.Msg.LCD_SETCURSOR_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=1&pos=987";
 Blockly.Msg.LCD_SETCURSOR_TITLE = "ディスプレイのもじのいち";
 Blockly.Msg.LCD_SETCURSOR_TOOLTIP = "ディスプレイのもじのいちをしていします。もじは、そのばしょからひょうじされます。";
