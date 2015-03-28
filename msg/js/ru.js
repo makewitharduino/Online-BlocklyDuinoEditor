@@ -139,7 +139,6 @@ Blockly.Msg.LCD_INIT_D4 = "D4";  // untranslated
 Blockly.Msg.LCD_INIT_D5 = "D5";  // untranslated
 Blockly.Msg.LCD_INIT_D6 = "D6";  // untranslated
 Blockly.Msg.LCD_INIT_D7 = "D7";  // untranslated
-Blockly.Msg.LCD_INIT_D8 = "D8";  // untranslated
 Blockly.Msg.LCD_INIT_ENABLE = "enable";  // untranslated
 Blockly.Msg.LCD_INIT_HELPURL = "http://www.arduino.cc/en/Reference/LiquidCrystalConstructor";  // untranslated
 Blockly.Msg.LCD_INIT_RS = "rs";  // untranslated
