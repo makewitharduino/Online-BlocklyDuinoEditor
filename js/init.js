@@ -242,16 +242,19 @@ function loadxml(){
 
 
 function getid() {
+  var categoryKey;
   var url = location.href;
   var parameters = url.split("?");
-  var params = parameters[1].split("&");
-  var paramsArray = [];
-  for (var i = 0; i < params.length; i++) {
-    var neet = params[i].split("=");
-    paramsArray.push(neet[0]);
-    paramsArray[neet[0]] = neet[1];
+  if(parameters.length > 1){
+    var params = parameters[1].split("&");
+    var paramsArray = [];
+    for (var i = 0; i < params.length; i++) {
+      var neet = params[i].split("=");
+      paramsArray.push(neet[0]);
+      paramsArray[neet[0]] = neet[1];
+    }
+    categoryKey = paramsArray["id"];
   }
-  var categoryKey = paramsArray["id"];
   return categoryKey;
 }
 
