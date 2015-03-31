@@ -156,6 +156,8 @@ function init() {
 
 function setCharacter() {
   var category;
+  category = document.getElementById('category_initializes');
+  category.setAttribute("name", Blockly.Msg.CATEGORY_INITIALIZES);
   category = document.getElementById('category_inout');
   category.setAttribute("name", Blockly.Msg.CATEGORY_INOUT);
   category = document.getElementById('category_serial');
@@ -170,6 +172,8 @@ function setCharacter() {
   category.setAttribute("name", Blockly.Msg.CATEGORY_LOOPS);
   category = document.getElementById('category_time');
   category.setAttribute("name", Blockly.Msg.CATEGORY_TIME);
+  category = document.getElementById('category_array');
+  category.setAttribute("name", Blockly.Msg.CATEGORY_ARRAY);
   category = document.getElementById('category_math');
   category.setAttribute("name", Blockly.Msg.CATEGORY_MATH);
   category = document.getElementById('category_text');

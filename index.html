@@ -66,9 +66,14 @@
   <textarea id="content_xml" class="content" wrap="off"></textarea>
 
   <xml id="toolbox" style="display: none">
+    <category id="category_initializes">
+      <block type="initializes_setup"></block>
+    </category>
     <category id="category_inout">
       <block type="inout_highlow"></block>
+      <block type="inout_digitalpin"></block>
       <block type="inout_digital_write"></block>
+      <block type="inout_custom_digital_write"></block>
       <block type="inout_digital_read"></block>
       <block type="inout_analog_write">
         <value name="NUM">
@@ -87,7 +92,6 @@
           </block>
         </value>
       </block>
-      <block type="inout_setup"></block>
     </category>
     <category id="category_ultrasonic">
       <block type="ultrasonic_setting"></block>
@@ -137,6 +141,16 @@
       <block type="micros"></block>
       <block type="delay"></block>
       <block type="delayMicroseconds"></block>
+    </category>
+    <category id="category_array">
+      <block type="array_create_with"></block>
+      <block type="array_getIndex">
+        <value name="AT">
+          <block type="math_number">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
     </category>
     <category id="category_math">
       <block type="math_number"></block>
