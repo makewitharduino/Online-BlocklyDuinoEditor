@@ -544,7 +544,7 @@ Blockly.Msg.VARIABLES_SET_TAIL = "=";
 Blockly.Msg.VARIABLES_SET_TITLE = "priskirk";
 Blockly.Msg.VARIABLES_SET_TOOLTIP = "Sets this variable to be equal to the input.";  // untranslated
 Blockly.Msg.VARIABLES_TYPE_ANY = "Any";  // untranslated
-Blockly.Msg.VARIABLES_TYPE_ARRAY = "Array1D int";  // untranslated
+Blockly.Msg.VARIABLES_TYPE_ARRAY = "Array int";  // untranslated
 Blockly.Msg.VARIABLES_TYPE_ARRAY2D = "Array2D int";  // untranslated
 Blockly.Msg.VARIABLES_TYPE_BOOLEAN = "boolean";  // untranslated
 Blockly.Msg.VARIABLES_TYPE_COLOUR = "Colour";  // untranslated
