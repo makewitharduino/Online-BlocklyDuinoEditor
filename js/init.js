@@ -320,6 +320,7 @@ function setScript() {
     }
   }
   var firstScript = document.getElementsByTagName('head')[0].appendChild(script);
+  console.log(firstScript);
   firstScript.parentNode.insertBefore(script, firstScript);
   script.onload = function (e) {
     setCharacter();
