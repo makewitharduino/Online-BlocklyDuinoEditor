@@ -298,8 +298,10 @@ function setScript() {
   script.id = 'msg';
   var c = $.cookie("lang");
   if(c) var param = c;
-  else param = getParam();
-  if(typeof id === "undefined") param = "en";
+  else {
+    param = getParam();
+    if(typeof id === "undefined") param = "en";
+  }
   script.src = filepath["msg_"+param];
   /*
   if (param == "ja") {
