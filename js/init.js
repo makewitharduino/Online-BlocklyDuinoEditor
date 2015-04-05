@@ -225,6 +225,7 @@ function loadfile() {
 
 function loadxml(){
   var id = getid();
+  console.log(id);
   if(typeof id === "undefined") return;
   var pass = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
   $.ajax({
@@ -253,6 +254,7 @@ function getid() {
   var categoryKey;
   var url = location.href;
   var parameters = url.split("?");
+  console.log(parameters);
   if(parameters.length > 1){
     var params = parameters[1].split("&");
     var paramsArray = [];
