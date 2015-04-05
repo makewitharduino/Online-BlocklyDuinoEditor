@@ -168,6 +168,10 @@ function setCharacter() {
   category.setAttribute("name", Blockly.Msg.CATEGORY_ULTRA_SONIC);
   category = document.getElementById('category_lcd');
   category.setAttribute("name", Blockly.Msg.CATEGORY_LCD);
+  category = document.getElementById('category_rgbled');
+  category.setAttribute("name", Blockly.Msg.CATEGORY_RGBLED);
+  category = document.getElementById('category_other_sensor');
+  category.setAttribute("name", Blockly.Msg.CATEGORY_OTHER_SENSOR);
   category = document.getElementById('category_loops');
   category.setAttribute("name", Blockly.Msg.CATEGORY_LOOPS);
   category = document.getElementById('category_time');
@@ -182,8 +186,8 @@ function setCharacter() {
   category.setAttribute("name", Blockly.Msg.CATEGORY_VARIABLES);
   category = document.getElementById('category_functions');
   category.setAttribute("name", Blockly.Msg.CATEGORY_FUNCTIONS);
-  category = document.getElementById('category_involt');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_INVOLT);
+  //category = document.getElementById('category_involt');
+  //category.setAttribute("name", Blockly.Msg.CATEGORY_INVOLT);
 
   var str;
   str = document.getElementById('tab_blocks');

@@ -93,16 +93,17 @@
         </value>
       </block>
     </category>
-    <category id="category_ultrasonic">
-      <block type="ultrasonic_setting"></block>
-      <block type="ultrasonic_maxrange"></block>
-      <block type="ultrasonic_distance"></block>
-    </category>
     <category id="category_serial">
       <block type="serial_available"></block>
       <block type="serial_print"></block>
       <block type="serial_println"></block>
       <block type="serial_read"></block>
+    </category>
+    <sep></sep>
+    <category id="category_ultrasonic">
+      <block type="ultrasonic_setting"></block>
+      <block type="ultrasonic_maxrange"></block>
+      <block type="ultrasonic_distance"></block>
     </category>
     <category id="category_lcd">
       <block type="lcd_init"></block>
@@ -110,12 +111,42 @@
       <block type="lcd_print"></block>
       <block type="lcd_setcursor"></block>
       <block type="lcd_clear"></block>
-      <block type="lcd_scrolldisplayright"></block>
-      <block type="lcd_scrolldisplayleft"></block>
+      <!--block type="lcd_scrolldisplayright"></block-->
+      <!--block type="lcd_scrolldisplayleft"></block-->
       <block type="lcd_autoscroll"></block>
       <block type="lcd_noautoscroll"></block>
-      <block type="lcd_lefttoright"></block>
-      <block type="lcd_righttoleft"></block>
+      <!--block type="lcd_lefttoright"></block-->
+      <!--block type="lcd_righttoleft"></block-->
+    </category>
+    <category id= "category_rgbled">
+      <block type="rgbled_begin"></block>
+      <block type="rgbled_setpixelcolor"></block>
+      <block type="rgbled_custom_setpixelcolor">
+        <value name="TARGET">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="R">
+          <block type="math_number">
+            <field name="NUM">255</field>
+          </block>
+        </value>
+        <value name="G">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+      <block type="rgbled_show"></block>
+    </category>
+    <category id="category_other_sensor">
+      <block type="dht_read"></block>
     </category>
     <sep></sep>
     <category id="category_logic">
@@ -184,12 +215,12 @@
     <category id="category_variables" custom="VARIABLE"></category>
     <category id="category_functions" custom="PROCEDURE"></category>
     <sep></sep>
-    <category id="category_involt">
+    <!--category id="category_involt">
       <block type="involt_directmode"></block>
       <block type="involt_chromereceive"></block>
       <block type="involt_sendvalue"></block>
       <block type="involt_receivevalue"></block>
-    </category>
+    </category-->
   </xml>
 </body>
 
