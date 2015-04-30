@@ -5,7 +5,7 @@
 
 'use strict';
 
-var TABS_ = ['blocks', 'arduino', 'term', 'xml'];
+var TABS_ = ['blocks', 'arduino', 'xml'];
 
 var selected = 'blocks';
 
@@ -72,7 +72,7 @@ function renderContent() {
     button.style.display = "none";
   } else if (content.id == 'content_arduino') {
     //content.innerHTML = Blockly.Arduino.workspaceToCode();
-    var arduinoTextarea = document.getElementById('textarea_arduino');
+    var arduinoTextarea = document.getElementById('content_arduino');
     arduinoTextarea.value = Blockly.Arduino.workspaceToCode();
     arduinoTextarea.focus();
     button.style.display = "";

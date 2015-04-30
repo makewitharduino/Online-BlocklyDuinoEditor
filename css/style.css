@@ -1,40 +1,54 @@
-html, body {
+html,
+body {
   height: 100%;
 }
+
 body {
   background-color: #fff;
   font-family: sans-serif;
+  font-size: 100%;
   margin: 0;
   overflow: hidden;
 }
-h1 {
-  font-weight: normal;
-  font-size: 140%;
-  margin-left: 5px;
-  margin-right: 5px;
+
+.title{
+  font-family: monospace;
+  white-space: nowrap;
+  background: #002b36;
+  color: #eee8d5;
+  font: 14px;
+  height: 50px;
+  line-height:50px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 /* Tabs */
 #tabRow>td {
   border: 1px solid #ccc;
 }
+
 td.tabon {
   border-bottom-color: #ddd !important;
   background-color: #ddd;
   padding: 5px 19px;
 }
+
 td.taboff {
   cursor: pointer;
   padding: 5px 19px;
 }
+
 td.taboff:hover {
   background-color: #eee;
 }
+
 td.tabmin {
   border-top-style: none !important;
   border-left-style: none !important;
   border-right-style: none !important;
 }
+
 td.tabmax {
   border-top-style: none !important;
   border-left-style: none !important;
@@ -43,16 +57,37 @@ td.tabmax {
   text-align: right;
 }
 
+td#content_area{
+  height: 99%;
+}
+
 table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
   border: none;
 }
+
+table#main{
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+table#tab{
+  width: 100%
+}
+
+tr#tabRow{
+  height: 1em;
+}
+
 td {
   padding: 0;
   vertical-align: top;
 }
+
 .content {
   visibility: hidden;
   margin: 0;
@@ -60,40 +95,85 @@ td {
   position: absolute;
   direction: ltr;
 }
+
 pre.content {
   overflow: scroll;
 }
+
 #content_blocks {
   padding: 0;
 }
+
 .blocklySvg {
   border-top: none !important;
 }
+
 #content_xml {
+  background-color: #073642;
+  color: #eee8d5;
   resize: none;
   outline: none;
   border: none;
   font-family: monospace;
   overflow: scroll;
 }
-button {
+
+#content_arduino {
+  resize: none;
+  outline: none;
+  border: none;
+  font-family: monospace;
+  overflow: scroll;
+  background-color: #073642;
+  color: #eee8d5;
+  font-size: 12px;
+  line-height: 12px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+button{
+  background: -moz-linear-gradient(top,#586e75 0%,#657b83);
+  background: -webkit-gradient(linear, left top, left bottom, from(#586e75), to(#657b83));
+  margin-top: 5px;
   padding: 1px 1em;
-  font-size: 90%;
+  font-size: 14px;
   border-radius: 4px;
   border: 1px solid #ddd;
-  background-color: #eee;
-  color: black;
+  color:#FFF;
 }
+
+#button_save {
+  margin-right: 5px;
+}
+
 button.launch {
   border: 1px solid #d43;
   background-color: #d43;
   color: white;
 }
+
 button:active {
   border: 1px solid blue !important;
 }
+
 button:hover {
   box-shadow: 2px 2px 5px #888;
+}
+
+#button_chrome{
+  position: absolute;
+  top: 11;
+  left: 270;
+  background: -moz-linear-gradient(top,#586e75 0%,#657b83);
+  background: -webkit-gradient(linear, left top, left bottom, from(#586e75), to(#657b83));
+  margin-top: 5px;
+  padding: 1px 1em;
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  color:#FFF;
 }
 
 #content_area {
@@ -102,11 +182,21 @@ button:hover {
 
 #languageMenu {
   position: absolute;
-  top: 10;
-  right: 160;
+  top: 13px;
+  right: 160px;
+  font-size: 14px;
+  background: #FFFFFF;
+  border: 2px solid #586e75;
+  border-radius: 5px;
+  color: #0C2245;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 5px;
+  vertical-align: middle;
+  width: 130px;
 }
 
-#button_sample{
+#button_sample {
   position: absolute;
   top: 10;
   right: 5;
@@ -116,93 +206,37 @@ button#fakeload {
   margin-right: 5px;
 }
 
-#textarea_arduino{
-  padding: 1px 1em;
-  height: 60%;
-  overflow: auto;
-  width: 100%;
-  background-color: rgba(8, 8, 8, 1);
-  color : rgba(29, 147, 47, 1);
-  font-size: 12px;
-  line-height: 12px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre-wrap;
+.info {
+  font-family: monospace;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  background: #002b36;
+  padding: 2px;
+  height: 20px;
+  left: 0;
+  right: 0;
+  color: #eee8d5;
 }
 
-#debug_arduino{
-  height: 40%;
-  border-width:2px;
-  border-color:black;
-  background-color: rgba(8, 8, 8, 1);
-  color : rgba(29, 147, 47, 1);
-  overflow: auto;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre-wrap;
-
+.info label {
+  font-weight: bold;
 }
 
-#serial_hud {
-  height: 85%;
-  overflow: auto;
-  background-color: rgba(8, 8, 8, 1);
-  color : rgba(29, 147, 47, 1);
-  font-size: 20px;
-  line-height: 20px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre-wrap;
+.dialog2 input {
+  border: 0;
+  padding: 10px;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  color: #aaa;
+  border: solid 1px #ccc;
+  margin: 0 0 20px;
+  width: 300px;
 }
 
-#serial_monitor_content{
-  height: 100%;
+.dialog2 button{
+  background: -moz-linear-gradient(top,#586e75 0%,#657b83);
+  background: -webkit-gradient(linear, left top, left bottom, from(#586e75), to(#657b83));
+  border: 1px solid #DDD;
+  color:#FFF;
 }
-
-#cb_cf_boards, #cb_cf_ports,#cb_cf_baud_rates {
-  border: 1px solid #CCC;
-  border-top-width: 1px;
-  border-right-width-value: 1px;
-  border-right-width-ltr-source: physical;
-  border-right-width-rtl-source: physical;
-  border-bottom-width: 1px;
-  border-left-width-value: 1px;
-  border-left-width-ltr-source: physical;
-  border-left-width-rtl-source: physical;
-  border-top-style: solid;
-  border-right-style-value: solid;
-  border-right-style-ltr-source: physical;
-  border-right-style-rtl-source: physical;
-  border-bottom-style: solid;
-  border-left-style-value: solid;
-  border-left-style-ltr-source: physical;
-  border-left-style-rtl-source: physical;
-  border-top-color: #CCC;
-  border-right-color-value: rgb(204, 204, 204);
-  border-right-color-ltr-source: physical;
-  border-right-color-rtl-source: physical;
-  border-bottom-color: #CCC;
-  border-left-color-value: rgb(204, 204, 204);
-  border-left-color-ltr-source: physical;
-  border-left-color-rtl-source: physical;
-  -moz-border-top-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  border-image-source: none;
-  border-image-slice: 100% 100% 100% 100%;
-  border-image-width: 1 1 1 1;
-  border-image-outset: 0 0 0 0;
-  border-image-repeat: stretch stretch;
-  background-color: rgba(242, 242, 242, 1);
-}
-
-#cb_cf_serial_monitor{
-  width: 100%;
-  height:100%;
-}
-
-#textarea_term {
-  border: none;
-}
-

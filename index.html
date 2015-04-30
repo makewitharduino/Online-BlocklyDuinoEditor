@@ -5,28 +5,23 @@
 </head>
 
 <body>
+  <h1 class="title">BlocklyDuino Editor</h1>
+  <button id="button_chrome" type="button" onclick=" location.href='https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb'">Chrome App</button>
   <select id="languageMenu" onchange="change_lang(this)">
     <option value="en">English</option>
     <option value="ja">日本語</option>
     <option value="ja_kids">にほんご</option>
   </select>
-  <button id="button_sample" type="button"onclick=" location.href='http://lets.makewitharduino.com'">サンプル/Sample</button>
+  <button id="button_sample" type="button" onclick=" location.href='http://lets.makewitharduino.com'">サンプル/Sample</button>
 
-  <table height="100%" width="100%">
+  <table id="main">
     <tr>
       <td>
-        <h1><a href="https://github.com/okhiroyuki/BlocklyDuino">BlocklyDuino</a> &gt; visual programming editor for arduino</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <table id="tab" width="100%">
-          <tr id="tabRow" height="1em">
+        <table id="tab">
+          <tr id="tabRow">
             <td id="tab_blocks" class="tabon" onclick="tabClick('blocks')">Blocks</td>
             <td class="tabmin">&nbsp;</td>
             <td id="tab_arduino" class="taboff" onclick="tabClick('arduino')"></td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_term" class="taboff" onclick="tabClick('term')">Console</td>
             <td class="tabmin">&nbsp;</td>
             <td id="tab_xml" class="taboff" onclick="tabClick('xml')"></td>
             <td class="tabmax">
@@ -45,24 +40,7 @@
     </tr>
   </table>
   <div id="content_blocks" class="content"></div>
-  <div id="content_arduino" class="content" readonly wrap="off">
-    <select id="cb_cf_boards"></select>
-    <select id="cb_cf_ports"></select>
-    <select id="cb_cf_programmers"> </select>
-    <button id="cb_cf_verify_btn" class="btn btn-success">Verify code</button>
-    <button id="cb_cf_flash_btn" class="btn btn-success">Flash Arduino</button>
-    <textarea id="textarea_arduino"></textarea>
-    <p id="cb_cf_operation_output"></p>
-    <div id="debug_arduino"></div>
-  </div>
-  <div id="content_term" class="content">
-    <div id="cb_cf_band">
-      <select id="cb_cf_baud_rates"></select>
-      <button id="cb_cf_serial_monitor_connect">Serial Monitor connect</button>
-    </div>
-    <div id="cb_cf_serial_monitor"></div>
-    <div id="serial_hud"></div>
-  </div>
+  <textarea id="content_arduino" class="content" readonly wrap="off"></textarea>
   <textarea id="content_xml" class="content" wrap="off"></textarea>
 
   <xml id="toolbox" style="display: none">
@@ -222,6 +200,8 @@
       <block type="involt_receivevalue"></block>
     </category-->
   </xml>
+  <div class="info">
+  </div>
 </body>
 
 </html>
