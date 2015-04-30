@@ -165,7 +165,7 @@ button:hover {
 #button_chrome{
   position: absolute;
   top: 11;
-  left: 270;
+  left: 330;
   background: -moz-linear-gradient(top,#586e75 0%,#657b83);
   background: -webkit-gradient(linear, left top, left bottom, from(#586e75), to(#657b83));
   margin-top: 5px;
