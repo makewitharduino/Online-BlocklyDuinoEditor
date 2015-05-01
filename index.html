@@ -6,13 +6,13 @@
 
 <body>
   <h1 class="title">BlocklyDuino Editor</h1>
-  <button id="button_chrome" type="button" onllick="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb?hl=ja">Offline Editor</button>
+  <button id="button_chrome" type="button" onclick="openNewTab('https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb')">Chrome App</button>
   <select id="languageMenu" onchange="change_lang(this)">
     <option value="en">English</option>
     <option value="ja">日本語</option>
     <option value="ja_kids">にほんご</option>
   </select>
-  <button id="button_sample" type="button" onclick="openSample()">サンプル/Sample</button>
+  <button id="button_sample" type="button" onclick="openNewTab('http://lets.makewitharduino.com')">サンプル/Sample</button>
 
   <table id="main">
     <tr>
