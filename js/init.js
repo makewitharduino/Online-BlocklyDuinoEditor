@@ -369,6 +369,11 @@ function change_lang(obj){
   window.location = loc.protocol + '//' + loc.host + loc.pathname + '?lang=' + val;
 }
 
+function openSample(){
+  var url = 'http://lets.makewitharduino.com';
+  window.open(url,'_blank');
+}
+
 function upload() {
   var arduinoTextarea = document.getElementById('textarea_arduino');
   arduinoTextarea.value = Blockly.Generator.workspaceToCode('Arduino');
