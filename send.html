@@ -28,10 +28,10 @@
     var url = getParam();
     if(url.length > 0 & url.indexOf('https://raw.githubusercontent.com/') == 0){
       chrome.runtime.sendMessage(extId,
-                                 {data: { url : url}});
+                                 {data: { app : url}});
       console.log("send");
     }
-    window.close();
+    window.open('about:blank','_self').close();
   </script>
 </body>
 </html>
