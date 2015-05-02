@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function getParam() {
+      var categoryKey = "";
+      var url = location.href;
+      var parameters = url.split("?");
+      if (parameters.length > 1) {
+        var params = parameters[1].split("&");
+        var paramsArray = [];
+        for (var i = 0; i < params.length; i++) {
+          var neet = params[i].split("=");
+          paramsArray.push(neet[0]);
+          paramsArray[neet[0]] = neet[1];
+        }
+        categoryKey = paramsArray["url"];
+      }
+      return categoryKey;
+    }
+  </script>
+  </head>
+<body>
+  <script>
+    var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
+    var url = getParam();
+    if(url.length > 0 & url.indexOf('https://raw.githubusercontent.com/') == 0){
+      chrome.runtime.sendMessage(extId,
+                                 {data: { url : url}});
+      console.log("send");
+    }
+  </script>
+</body>
+</html>
