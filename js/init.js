@@ -246,8 +246,22 @@ function loadxml(){
       }
     }
   });
+
+  setTimeout(sendChrome(pass),1000);
 };
 
+function sendChrome(url){
+  var userAgent = window.navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf('chrome') == -1) return;
+
+  // 確認ボタン付きのダイアログボックスを表示する
+  var result = confirm("Send XML for ChromeApp.");
+
+  if(result){
+    var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
+    chrome.runtime.sendMessage(extId,{data: { url : url}});
+  }
+}
 
 function getid() {
   var categoryKey;
