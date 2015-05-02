@@ -122,6 +122,7 @@ Blockly.Msg.DIALOG1_TITLE = "ブロックをすべて消しますか？";
 Blockly.Msg.DIALOG1_YES = "はい";
 Blockly.Msg.DIALOG2_TITLE = "ファイル名";
 Blockly.Msg.DIALOG3_TITLE = "XMLファイルがありません";
+Blockly.Msg.DIALOG_SENDCHROME = "ChromeAppにサンプルコードをおくりますか？";
 Blockly.Msg.DISABLE_BLOCK = "ブロックを無効にします。";
 Blockly.Msg.DISCARD = "初期化";
 Blockly.Msg.DO = "ド";

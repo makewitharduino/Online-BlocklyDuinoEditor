@@ -122,6 +122,7 @@ Blockly.Msg.DIALOG1_TITLE = "Delete All Blocks?";  // untranslated
 Blockly.Msg.DIALOG1_YES = "Yes";  // untranslated
 Blockly.Msg.DIALOG2_TITLE = "Filename";  // untranslated
 Blockly.Msg.DIALOG3_TITLE = "can't read xml file";  // untranslated
+Blockly.Msg.DIALOG_SENDCHROME = "Send Sample Code for ChromeApp?";  // untranslated
 Blockly.Msg.DISABLE_BLOCK = "ब्लॉक को अक्षम करें";
 Blockly.Msg.DISCARD = "discard";  // untranslated
 Blockly.Msg.DO = "do";  // untranslated

@@ -122,6 +122,7 @@ Blockly.Msg.DIALOG1_TITLE = "Delete All Blocks?";
 Blockly.Msg.DIALOG1_YES = "Yes";
 Blockly.Msg.DIALOG2_TITLE = "Filename";
 Blockly.Msg.DIALOG3_TITLE = "can't read xml file";
+Blockly.Msg.DIALOG_SENDCHROME = "Send Sample Code for ChromeApp?";
 Blockly.Msg.DISABLE_BLOCK = "Disable Block";
 Blockly.Msg.DISCARD = "discard";
 Blockly.Msg.DO = "do";

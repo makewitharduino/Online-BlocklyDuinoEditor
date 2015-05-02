@@ -122,6 +122,7 @@ Blockly.Msg.DIALOG1_TITLE = "ブロックをすべてけしますか？";
 Blockly.Msg.DIALOG1_YES = "はい";
 Blockly.Msg.DIALOG2_TITLE = "ふぁいるめい";
 Blockly.Msg.DIALOG3_TITLE = "XMLファイルがありません";
+Blockly.Msg.DIALOG_SENDCHROME = "ChromeAppにサンプルコードをおくりますか？";
 Blockly.Msg.DISABLE_BLOCK = "ブロックをむこうにします。";
 Blockly.Msg.DISCARD = "データをけす";
 Blockly.Msg.DO = "ド";
