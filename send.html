@@ -20,10 +20,28 @@
       }
       return categoryKey;
     }
+
+    function checkChrome() {
+      var userAgent = window.navigator.userAgent.toLowerCase();
+
+      if (userAgent.indexOf('chrome') == -1) {
+        alert("Script Work only Chrome.");
+      }
+    }
+
+    function back(){
+      if(document.referrer.length > 0){
+        location.href = document.referrer;
+      }else{
+        location.href = "http://lets.makewitharduino.com";
+      }
+    }
   </script>
   </head>
 <body>
   <script>
+    checkChrome();
+    console.log(document.referrer);
     var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
     var url = getParam();
     if(url.length > 0 & url.indexOf('https://raw.githubusercontent.com/') == 0){
@@ -31,6 +49,7 @@
                                  {data: { url : url}});
       console.log("send");
     }
+    setTimeout(back(), 3000);
   </script>
 </body>
 </html>
