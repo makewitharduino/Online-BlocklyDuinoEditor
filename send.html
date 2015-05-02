@@ -28,7 +28,7 @@
     var url = getParam();
     if(url.length > 0 & url.indexOf('https://raw.githubusercontent.com/') == 0){
       chrome.runtime.sendMessage(extId,
-                                 {data: { app : url}});
+                                 {data: { url : url}});
       console.log("send");
     }
     window.open('about:blank','_self').close();
