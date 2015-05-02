@@ -256,10 +256,9 @@ function setXmlContent(url){
 
 function sendChrome(url){
   var userAgent = window.navigator.userAgent.toLowerCase();
-  if (userAgent.indexOf('chrome') == -1){
+  if (userAgent.indexOf('chrome') != -1){
     // 確認ボタン付きのダイアログボックスを表示する
     var result = confirm("Send XML for ChromeApp.");
-
     if(result){
       var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
       chrome.runtime.sendMessage(extId,{data: { url : url}});
