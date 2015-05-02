@@ -226,9 +226,15 @@ function loadfile() {
 function loadxml(){
   var id = getid();
   if(typeof id === "undefined") return;
-  var pass = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
+  var url = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
+  if(!sendChrome(url)){
+    setXmlContent(url);
+  }
+};
+
+function setXmlContent(url){
   $.ajax({
-    url: pass,
+    url: url,
     type: "GET",
     dataType: 'text',
     success: function(res) {
@@ -246,22 +252,23 @@ function loadxml(){
       }
     }
   });
-
-  setTimeout(sendChrome(pass),1000);
-};
+}
 
 function sendChrome(url){
   var userAgent = window.navigator.userAgent.toLowerCase();
-  if (userAgent.indexOf('chrome') == -1) return;
+  if (userAgent.indexOf('chrome') == -1){
+    // 確認ボタン付きのダイアログボックスを表示する
+    var result = confirm("Send XML for ChromeApp.");
 
-  // 確認ボタン付きのダイアログボックスを表示する
-  var result = confirm("Send XML for ChromeApp.");
-
-  if(result){
-    var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
-    chrome.runtime.sendMessage(extId,{data: { url : url}});
+    if(result){
+      var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
+      chrome.runtime.sendMessage(extId,{data: { url : url}});
+      return true;
+    }
   }
+  return false;
 }
+
 
 function getid() {
   var categoryKey;
