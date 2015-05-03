@@ -1,34 +1,70 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="header.js"></script>
 </head>
 
 <body>
-  <h1 class="title">BlocklyDuino Editor</h1>
-  <button id="button_chrome" type="button" onclick="openNewTab('https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb')">Chrome App</button>
-  <select id="languageMenu" onchange="change_lang(this)">
-    <option value="en">English</option>
-    <option value="ja">日本語</option>
-    <option value="ja_kids">にほんご</option>
-  </select>
-  <button id="button_sample" type="button" onclick="openNewTab('http://lets.makewitharduino.com')">サンプル/Sample</button>
+  <nav>
+    <div class="nav-wrapper blue-grey darken-4">
+      <a href="./" class="brand-logo">BlocklyDuino Editor</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="tooltipped" href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb" target="_blank"  id="get-app" data-tooltip="I am tooltip"><i class="mdi-action-get-app"></i></a></li>
+        <li><a class="tooltipped" href="http://lets.makewitharduino.com" target="_blank" id="go-to-sample" data-tooltip="I am tooltip"><i class="mdi-action-receipt"></i></a></li>
+        <li><a class="waves-effect waves-light modal-trigger  tooltipped" id="change-lang" href="#modal1" data-tooltip="I am tooltip"><i class="mdi-action-language"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <form action="#">
+        <p id="dialog-lang-title">Language Setting</p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="select-lang-en" value="en"/>
+          <label for="select-lang-en" id="label-en">English</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="select-lang-ja" value="ja"/>
+          <label for="select-lang-ja" id="label-ja">日本語</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="select-lang-ja_kids" value="ja_kids"/>
+          <label for="select-lang-ja_kids" id="label-ja-kids">にほんご</label>
+        </p>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" onclick="change_lang()">OK</a>
+    </div>
+  </div>
 
   <table id="main">
     <tr>
       <td>
         <table id="tab">
           <tr id="tabRow">
-            <td id="tab_blocks" class="tabon" onclick="tabClick('blocks')">Blocks</td>
+            <td id="tab_blocks" class="tabon " onclick="tabClick('blocks')">Blocks</td>
             <td class="tabmin">&nbsp;</td>
             <td id="tab_arduino" class="taboff" onclick="tabClick('arduino')"></td>
             <td class="tabmin">&nbsp;</td>
             <td id="tab_xml" class="taboff" onclick="tabClick('xml')"></td>
             <td class="tabmax">
-              <button id="copy-button" data-clipboard-target="textarea_arduino" data-clipboard-text="Clip Me!">Code Copy</button>
-              <button id="discard" onclick="discard()">Discard</button>
-              <button id="save" onclick="save()"></button>
-              <button id="fakeload"></button>
+              <a href="#" class="hide-link tooltipped" id="copy-button" data-tooltip="I am tooltip"  data-clipboard-target="content_arduino" data-clipboard-text="Clip Me!"><i class="small mdi-content-content-copy"></i></a>
+              <a href="#" class="hide-link tooltipped" id="discard" onclick="discard()" data-tooltip="I am tooltip"><i class="small mdi-navigation-refresh"></i></a>
+              <a href="#" class="hide-link tooltipped" data-tooltip="I am tooltip"  id="save" onclick="save()"><i class="small mdi-file-cloud-download"></i></a>
+              <a href="#" class="hide-link tooltipped"  id="fakeload" data-tooltip="I am tooltip"><i class="small mdi-file-cloud-upload"></i></a>
               <input type="file" id="load" style="display: none;" />
             </td>
           </tr>
@@ -96,7 +132,7 @@
       <!--block type="lcd_lefttoright"></block-->
       <!--block type="lcd_righttoleft"></block-->
     </category>
-    <category id= "category_rgbled">
+    <category id="category_rgbled">
       <block type="rgbled_begin"></block>
       <block type="rgbled_setpixelcolor"></block>
       <block type="rgbled_custom_setpixelcolor">
@@ -194,11 +230,11 @@
     <category id="category_functions" custom="PROCEDURE"></category>
     <sep></sep>
     <!--category id="category_involt">
-      <block type="involt_directmode"></block>
-      <block type="involt_chromereceive"></block>
-      <block type="involt_sendvalue"></block>
-      <block type="involt_receivevalue"></block>
-    </category-->
+<block type="involt_directmode"></block>
+<block type="involt_chromereceive"></block>
+<block type="involt_sendvalue"></block>
+<block type="involt_receivevalue"></block>
+</category-->
   </xml>
   <div class="info">
   </div>

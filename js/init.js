@@ -156,54 +156,36 @@ function init() {
 
 function setCharacter() {
   var category;
-  category = document.getElementById('category_initializes');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_INITIALIZES);
-  category = document.getElementById('category_inout');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_INOUT);
-  category = document.getElementById('category_serial');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_SERIAL);
-  category = document.getElementById('category_logic');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_LOGIC);
-  category = document.getElementById('category_ultrasonic');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_ULTRA_SONIC);
-  category = document.getElementById('category_lcd');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_LCD);
-  category = document.getElementById('category_rgbled');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_RGBLED);
-  category = document.getElementById('category_other_sensor');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_OTHER_SENSOR);
-  category = document.getElementById('category_loops');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_LOOPS);
-  category = document.getElementById('category_time');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_TIME);
-  category = document.getElementById('category_array');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_ARRAY);
-  category = document.getElementById('category_math');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_MATH);
-  category = document.getElementById('category_text');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_TEXT);
-  category = document.getElementById('category_variables');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_VARIABLES);
-  category = document.getElementById('category_functions');
-  category.setAttribute("name", Blockly.Msg.CATEGORY_FUNCTIONS);
-  //category = document.getElementById('category_involt');
-  //category.setAttribute("name", Blockly.Msg.CATEGORY_INVOLT);
+  $('#category_initializes').attr('name',Blockly.Msg.CATEGORY_INITIALIZES);
+  $('#category_inout').attr('name',Blockly.Msg.CATEGORY_INOUT);
+  $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);
+  $('#category_logic').attr('name',Blockly.Msg.CATEGORY_LOGIC);
+  $('#category_ultrasonic').attr('name',Blockly.Msg.CATEGORY_ULTRA_SONIC);
+  $('#category_lcd').attr('name',Blockly.Msg.CATEGORY_LCD);
+  $('#category_rgbled').attr('name',Blockly.Msg.CATEGORY_RGBLED);
+  $('#category_other_sensor').attr('name',Blockly.Msg.CATEGORY_OTHER_SENSOR);
+  $('#category_loops').attr('name',Blockly.Msg.CATEGORY_LOOPS);
+  $('#category_time').attr('name',Blockly.Msg.CATEGORY_TIME);
+  $('#category_array').attr('name',Blockly.Msg.CATEGORY_ARRAY);
+  $('#category_math').attr('name',Blockly.Msg.CATEGORY_MATH);
+  $('#category_text').attr('name',Blockly.Msg.CATEGORY_TEXT);
+  $('#category_variables').attr('name',Blockly.Msg.CATEGORY_VARIABLES);
+  $('#category_functions').attr('name',Blockly.Msg.CATEGORY_FUNCTIONS);
+//  $('#category_involt').attr('name',Blockly.Msg.CATEGORY_INVOLT);
 
-  var str;
-  str = document.getElementById('tab_blocks');
-  str.textContent = Blockly.Msg.BLOCKS;
-  str = document.getElementById('tab_arduino');
-  str.textContent = Blockly.Msg.ARDUINO;
-  str = document.getElementById('tab_xml');
-  str.textContent = Blockly.Msg.XML;
-  str = document.getElementById('copy-button');
-  str.textContent = Blockly.Msg.COPY_BUTTON;
-  str = document.getElementById('discard');
-  str.textContent = Blockly.Msg.DISCARD;
-  str = document.getElementById('save');
-  str.textContent = Blockly.Msg.SAVE_XML;
-  str = document.getElementById('fakeload');
-  str.textContent = Blockly.Msg.LOAD_XML;
+  $("#tab_blocks").text(Blockly.Msg.BLOCKS);
+  $("#tab_arduino").text(Blockly.Msg.ARDUINO);
+  $("#tab_xml").text(Blockly.Msg.XML);
+
+  $("#get-app").attr("data-tooltip",Blockly.Msg.DOWNLOAD_CHROME_APP);
+  $("#go-to-sample").attr("data-tooltip",Blockly.Msg.GO_TO_SAMPLE);
+  $("#change-lang").attr("data-tooltip",Blockly.Msg.CHANGE_LANG);
+  $("#dialog-lang-title").text(Blockly.Msg.DIALOG_LANG_TITLE);
+
+  $("#copy-button").attr("data-tooltip",Blockly.Msg.COPY_BUTTON);
+  $("#discard").attr("data-tooltip",Blockly.Msg.DISCARD);
+  $("#save").attr("data-tooltip",Blockly.Msg.SAVE_XML);
+  $("#fakeload").attr("data-tooltip",Blockly.Msg.LOAD_XML);
 }
 
 function loadfile() {
@@ -320,25 +302,12 @@ function setScript() {
   if(c) var param = c;
   else {
     param = getParam();
-    if(typeof id === "undefined") param = "en";
+    if(typeof param === "undefined") param = "en";
   }
   script.src = filepath["msg_"+param];
-  /*
-  if (param == "ja") {
-    script.src = "/msg/js/ja.js";
-  } else if(param == "ja_kids"){
-    script.src = "/msg/js/ja_kids.js";
-  }else{
-    script.src = "/msg/js/en.js";
-  }
-  */
+  var str = "#select-lang-"+ param;
+  $(str).prop('checked', true);
 
-  var options = document.getElementById('languageMenu');
-  for(var i=0;i<options.length;i++){
-    if(options[i].value == param){
-      options[i].selected=true;
-    }
-  }
   var firstScript = document.getElementsByTagName('head')[0].appendChild(script);
   firstScript.parentNode.insertBefore(script, firstScript);
   script.onload = function (e) {
@@ -364,17 +333,20 @@ function getFiles() {
   }
 }
 
-function change_lang(obj){
-  var val = obj.options[obj.selectedIndex].value;
+function change_lang(){
+  var val = $('[class="with-gap"]:checked').map(function(){
+    //$(this)でjQueryオブジェクトが取得できる。val()で値をvalue値を取得。
+    return $(this).val();
+  }).get();
+  //mapの結果がjQueryオブジェクトの配列で返ってくるので、get()で生配列を取得する。
+
+  //var val = obj.options[obj.selectedIndex].value;
   $.cookie("lang", val, {
     expires: 7
   });
   var loc = window.location;
   window.location = loc.protocol + '//' + loc.host + loc.pathname + '?lang=' + val;
-}
 
-function openNewTab(url){
-  window.open(url,'_blank');
 }
 
 function upload() {
