@@ -155,7 +155,6 @@ function init() {
 }
 
 function setCharacter() {
-  var category;
   $('#category_initializes').attr('name',Blockly.Msg.CATEGORY_INITIALIZES);
   $('#category_inout').attr('name',Blockly.Msg.CATEGORY_INOUT);
   $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);

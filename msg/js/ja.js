@@ -137,6 +137,7 @@ Blockly.Msg.EXPAND_ALL = "ブロックを展開します。";
 Blockly.Msg.EXPAND_BLOCK = "ブロックを展開します。";
 Blockly.Msg.EXTERNAL_INPUTS = "外部入力";
 Blockly.Msg.GO_TO_SAMPLE = "サンプルサイトへのリンク";
+Blockly.Msg.GO_TO_WEB = "オンラインエディタへのリンク";
 Blockly.Msg.HELP = "ヘルプ";
 Blockly.Msg.INFO_FILENAME = "ファイル名: ";
 Blockly.Msg.INFO_TITLE = "[読み込んだファイルはありません]";
@@ -491,6 +492,7 @@ Blockly.Msg.SERIAL_PRINT_TOOLTIP = "人が読むことのできる形式(ASCII�
 Blockly.Msg.SERIAL_READ_APPENDTEXT = "シリアル読み込み";
 Blockly.Msg.SERIAL_READ_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=3248";
 Blockly.Msg.SERIAL_READ_TOOLTIP = "受信データを読み込みます。 ";
+Blockly.Msg.SETTING = "設定";
 Blockly.Msg.TERM = "ターミナル";
 Blockly.Msg.TEXT_APPEND_APPENDTEXT = "テキストを追加します。";
 Blockly.Msg.TEXT_APPEND_HELPURL = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated

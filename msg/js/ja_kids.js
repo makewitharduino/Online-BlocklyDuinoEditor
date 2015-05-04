@@ -137,6 +137,7 @@ Blockly.Msg.EXPAND_ALL = "ブロックをてんかします。";
 Blockly.Msg.EXPAND_BLOCK = "ブロックをてんかします。";
 Blockly.Msg.EXTERNAL_INPUTS = "がいぶにゅうりょく";
 Blockly.Msg.GO_TO_SAMPLE = "サンプルサイトへのリンク";
+Blockly.Msg.GO_TO_WEB = "オンラインエディタへのリンク";
 Blockly.Msg.HELP = "ヘルプ";
 Blockly.Msg.INFO_FILENAME = "ファイルめい: ";
 Blockly.Msg.INFO_TITLE = "[よみこんだファイルはありません]";
@@ -491,6 +492,7 @@ Blockly.Msg.SERIAL_PRINT_TOOLTIP = "パソコンにもじをおくります";
 Blockly.Msg.SERIAL_READ_APPENDTEXT = "もじをうけとる";
 Blockly.Msg.SERIAL_READ_HELPURL = "http://www.musashinodenpa.com/arduino/ref/index.php?f=0&pos=3248";
 Blockly.Msg.SERIAL_READ_TOOLTIP = "パソコンからもじをうけとります";
+Blockly.Msg.SETTING = "せってい";
 Blockly.Msg.TERM = "Console";
 Blockly.Msg.TEXT_APPEND_APPENDTEXT = "テキストを追加します。";
 Blockly.Msg.TEXT_APPEND_HELPURL = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
