@@ -219,17 +219,14 @@ function setXmlContent(url){
     type: "GET",
     dataType: 'text',
     success: function(res) {
-      var obj = document.getElementById("content_xml");
       var xml = res.responseText;
       if(xml.length >0){
-        document.getElementById('tab_xml').className = 'tabon';
-        document.getElementById('tab_blocks').className = 'taboff';
-        document.getElementById('content_xml').style.visibility = 'visible';
-        renderContent();
+        Blockly.mainWorkspace.clear();
         xml = xml.replace("<html><head/><body><xml>",'');
         xml = xml.replace("</body></html>",'');
         xml = '<xml xmlns="http://www.w3.org/1999/xhtml">' + xml;
-        obj.value = xml;
+        var xmlDoc = Blockly.Xml.textToDom(xml);
+        Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, xmlDoc);
       }
     }
   });
