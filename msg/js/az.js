@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  //
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "girişlər";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Şərhi sil";
 Blockly.Msg.RENAME_VARIABLE = "Dəyişənin adını dəyiş...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Bütün '%1' dəyişənlərinin adını buna dəyiş:";

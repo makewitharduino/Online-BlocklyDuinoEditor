@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  //
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "นำเข้า";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "เอาคำอธิบายออก";
 Blockly.Msg.RENAME_VARIABLE = "เปลี่ยนชื่อตัวแปร...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "เปลี่ยนชื่อ \"%1\" เป็น:";

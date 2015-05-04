@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Dodaj dane wejściowe do funkcji.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "wejścia";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Dodaj, usuń lub zmień kolejność danych wejściowych dla tej funkcji.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Usuń Komentarz";
 Blockly.Msg.RENAME_VARIABLE = "Zmień nazwę zmiennej...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Zmień nazwy wszystkich '%1' zmiennych na:";

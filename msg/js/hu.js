@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Bemenet hozzáadása a függvényhe
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "paraméterek";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Bemenetek hozzáadása, eltávolítása vagy átrendezése ehhez a függvényhez.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Megjegyzés törlése";
 Blockly.Msg.RENAME_VARIABLE = "Változó átnevezése...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Minden \"%1\" változó átnevezése erre:";

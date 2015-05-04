@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "फंगक्शन को इन
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "इनपुट";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "टिप्पणी हटायें";
 Blockly.Msg.RENAME_VARIABLE = "चर का नाम बदलें...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "सभी '%1' चरों के नाम बदलें:";

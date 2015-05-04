@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  //
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "inputs";  // untranslated
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Odstrániť komentár";
 Blockly.Msg.RENAME_VARIABLE = "Premenovať premennú...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Premenovať všetky premenné '%1' na:";

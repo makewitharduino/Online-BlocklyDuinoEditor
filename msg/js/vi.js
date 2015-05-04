@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Thêm một đầu vào cho hàm.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "các tham số";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Thêm, xóa hoặc sắp xếp lại các đầu vào cho hàm này.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Xóa Chú Giải";
 Blockly.Msg.RENAME_VARIABLE = "Thay tên biến...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Thay tên tất cả \"%1\" biến này thành:";

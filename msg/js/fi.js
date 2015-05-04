@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Lisää sisääntulon funktioon.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "syötteet";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Lisää, poista tai järjestele uudelleen tämän toiminnon tulot.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Poista kommentti";
 Blockly.Msg.RENAME_VARIABLE = "Nimeä uudelleen muuttuja...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Nimeä uudelleen kaikki '%1' muuttujaa:";

@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Gionté n'imission a la fonsion.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "imission";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Gionté, gavé o riordiné j'imission ëd sa fonsion.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Scancelé un coment";
 Blockly.Msg.RENAME_VARIABLE = "Arnomé la variàbil...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Arnomé tute le variàbij '%1' 'me:";

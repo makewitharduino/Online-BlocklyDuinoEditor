@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "inputs";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";
 Blockly.Msg.RE = "re";
+Blockly.Msg.REBOOT = "Please Reboot";
 Blockly.Msg.REMOVE_COMMENT = "Remove Comment";
 Blockly.Msg.RENAME_VARIABLE = "Rename variable...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Rename all '%1' variables to:";

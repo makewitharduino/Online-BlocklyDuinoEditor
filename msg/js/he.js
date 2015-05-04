@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "הוסף קלט לפונקציה";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "מקורות קלט";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "הוסף, הסר או סדר מחדש קלטים לפונקציה זו";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "הסר הערה";
 Blockly.Msg.RENAME_VARIABLE = "שנה את שם המשתנה...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "שנה את שם כל '%1' המשתנים ל:";

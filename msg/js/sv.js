@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Lägg till en inmatning till funkti
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "inmatningar";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Lägg till, ta bort och ändra ordningen för inmatningar till denna funktion.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Radera kommentar";
 Blockly.Msg.RENAME_VARIABLE = "Byt namn på variabel...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Byt namn på alla'%1'-variabler till:";

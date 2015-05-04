@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  //
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "入力";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "レ";
+Blockly.Msg.REBOOT = "アプリを再起動してください";
 Blockly.Msg.REMOVE_COMMENT = "コメントを削除します。";
 Blockly.Msg.RENAME_VARIABLE = "変数の名前を変更.";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "%1の変数すべてを名前変更します。";

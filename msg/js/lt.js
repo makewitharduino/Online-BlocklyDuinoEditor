@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Pridėti funkcijos parametrą (gaun
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "gaunami duomenys (parametrai)";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Tvarkyti komandos gaunamus duomenis (parametrus).";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Pašalinti komentarą";
 Blockly.Msg.RENAME_VARIABLE = "Pervardyti kintamajį...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Pervadinti visus '%1' kintamuosius į:";

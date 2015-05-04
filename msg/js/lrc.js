@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.";  //
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "داده یا";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.";  // untranslated
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "نظر جا وه جا کو";
 Blockly.Msg.RENAME_VARIABLE = "د نو نوم نیائن آلشتگر...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "د نو نوم نیائن %1 د تموم آلشتگریا د:";

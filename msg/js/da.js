@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Tilføj en parameter til funktionen
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "parametre";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Tilføje, fjerne eller ændre rækkefølgen af parametre til denne funktion.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Fjern kommentar";
 Blockly.Msg.RENAME_VARIABLE = "Omdøb variabel...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Omdøb alle '%1' variabler til:";

@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Πρόσθεσε μια είσοδ�
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "είσοδοι";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Προσθέτει, αφαιρεί ή αναδιατάσσει εισόδους σε αυτήν τη λειτουργία";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Αφαίρεσε Το Σχόλιο";
 Blockly.Msg.RENAME_VARIABLE = "Μετονόμασε τη μεταβλητή...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Μετονόμασε όλες τις μεταβλητές «%1» σε:";

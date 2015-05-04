@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Generier/erzeich \"Uffruf %1\"";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "Parameter";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Variable:";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Kommentar entferne";
 Blockly.Msg.RENAME_VARIABLE = "Die neie Variable sei Noome:";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "All \"%1\" Variable umbenenne in:";

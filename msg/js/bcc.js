@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "اضافه کردن ورودی به
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "ورودی‌ها";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "افزودن، حذف یا دوباره مرتب‌کردن ورودی این تابع.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "حذف نظر";
 Blockly.Msg.RENAME_VARIABLE = "تغییر نام متغیر...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "تغییر نام همهٔ متغیرهای «%1» به:";

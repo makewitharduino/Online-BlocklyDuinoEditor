@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Добавяне на параме�
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "вход";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Добави, премахни или пренареди входните параметри за тази функция.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Премахни коментар";
 Blockly.Msg.RENAME_VARIABLE = "Преименувай променливата...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Преименувай всички '%1' променливи на:";

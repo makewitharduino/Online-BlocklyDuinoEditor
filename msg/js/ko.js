@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "함수에 값을 더합니다.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "매개 변수들";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "이 함수를 추가, 삭제, 혹은 재정렬합니다.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "내용 제거";
 Blockly.Msg.RENAME_VARIABLE = "변수 이름 바꾸기:";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "'%1' 변수 이름을 바꾸기:";

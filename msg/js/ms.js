@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Tambah satu input pada fungsi.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "Input-input";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Tambah, alih keluar atau susun semula input pada fungsi ini.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Padamkan Komen";
 Blockly.Msg.RENAME_VARIABLE = "Tukar nama pembolehubah...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Tukar nama semua pembolehubah '%1' kepada:";

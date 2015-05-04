@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Добавить входной п�
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "параметры";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Добавить, удалить или изменить порядок входных параметров для этой функции.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Удалить комментарий";
 Blockly.Msg.RENAME_VARIABLE = "Переименовать переменную…";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Переименовать все переменные '%1' в:";

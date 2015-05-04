@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "添加函数输入。";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "输入";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "添加、删除或重新排此函数的输入。";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "删除注释";
 Blockly.Msg.RENAME_VARIABLE = "重命名变量...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "将所有“%1”变量重命名为:";

@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Adaugă un parametru de intrare pen
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "intrări";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Adăugă, șterge sau reordonează parametrii de intrare ai acestei funcții.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Elimină comentariu";
 Blockly.Msg.RENAME_VARIABLE = "Redenumirea variabilei...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Redenumeşte toate variabilele '%1' în:";

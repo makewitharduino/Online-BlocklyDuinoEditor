@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "İşleve bir girdi ekleyin.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "girdiler";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Bu işlevin girdilerini ekleyin, çıkarın, ya da yeniden sıralayın.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Yorumu sil";
 Blockly.Msg.RENAME_VARIABLE = "Değişkeni yeniden adlandır...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Tüm '%1' değişkenlerini yeniden isimlendir:";

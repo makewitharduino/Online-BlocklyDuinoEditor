@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Aciungi un input a sa funtzioni.";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "inputs";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Aciungi, fùlia, o assenta is inputs a custa funtzioni.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Fùlia unu cumentu";
 Blockly.Msg.RENAME_VARIABLE = "Muda nòmini a variabili...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "A is variabilis '%1' muda nòmini a:";

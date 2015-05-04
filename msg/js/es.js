@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Añadir una entrada a la función."
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "entradas";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Añadir, eliminar o reordenar entradas para esta función.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Eliminar comentario";
 Blockly.Msg.RENAME_VARIABLE = "Renombrar la variable…";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Renombrar todas las variables «%1» a:";

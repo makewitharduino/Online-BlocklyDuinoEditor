@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Додати вхідні пара�
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "вхід";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Додати, видалити або змінити порядок вхідних параметрів для цієї функції.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Видалити коментар";
 Blockly.Msg.RENAME_VARIABLE = "Перейменувати змінну...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Перейменувати усі змінні \"%1\" до:";

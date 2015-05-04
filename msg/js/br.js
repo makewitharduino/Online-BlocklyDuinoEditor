@@ -454,6 +454,7 @@ Blockly.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Ouzhpennañ ur moned d'an arc'hwel.
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "Monedoù";
 Blockly.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Ouzhpennañ, lemel, pe adkempenn monedoù an arc'hwel-mañ.";
 Blockly.Msg.RE = "re";  // untranslated
+Blockly.Msg.REBOOT = "Please Reboot";  // untranslated
 Blockly.Msg.REMOVE_COMMENT = "Lemel an evezhiadenn kuit";
 Blockly.Msg.RENAME_VARIABLE = "Adenvel an argemmenn...";
 Blockly.Msg.RENAME_VARIABLE_TITLE = "Adenvel an holl argemmennoù '%1' e :";
