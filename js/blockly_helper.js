@@ -67,11 +67,12 @@ function load(event) {
       try {
         var xml = Blockly.Xml.textToDom(target.result);
       } catch (e) {
-        alert('Error parsing XML:\n' + e);
+        Materialize.toast(Blockly.Msg.ERROR_PARSING_XML + ':\n' + e);
+        //alert('Error parsing XML:\n' + e);
         return;
       }
       var count = Blockly.mainWorkspace.getAllBlocks().length;
-      if (count && confirm('Replace existing blocks?\n"Cancel" will merge.')) {
+      if (count && confirm(Blockly.Msg.REPLACE_TEXT1 + '\n' +Blockly.Msg.REPLACE_TEXT2)) {
         Blockly.mainWorkspace.clear();
       }
       Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, xml);

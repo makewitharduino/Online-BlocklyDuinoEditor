@@ -5,7 +5,7 @@
 
 'use strict';
 
-var TABS_ = ['blocks', 'arduino', 'xml'];
+var TABS_ = ['blocks', 'arduino'];
 
 var selected = 'blocks';
 
@@ -14,27 +14,6 @@ var selected = 'blocks';
  * @param {string} clickedName Name of tab clicked.
  */
 function tabClick(clickedName) {
-  // If the XML tab was open, save and render the content.
-  if (document.getElementById('tab_xml').className == 'tabon') {
-    var xmlTextarea = document.getElementById('content_xml');
-    var xmlText = xmlTextarea.value;
-    var xmlDom = null;
-    try {
-      xmlDom = Blockly.Xml.textToDom(xmlText);
-    } catch (e) {
-      var q =
-        window.confirm('Error parsing XML:\n' + e + '\n\nAbandon changes?');
-      if (!q) {
-        // Leave the user on the XML tab.
-        return;
-      }
-    }
-    if (xmlDom) {
-      Blockly.mainWorkspace.clear();
-      Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, xmlDom);
-    }
-  }
-
   // Deselect all tabs and hide all panes.
   for (var i = 0; i < TABS_.length; i++) {
     var name = TABS_[i];
@@ -62,13 +41,6 @@ function renderContent() {
     // If the workspace was changed by the XML tab, Firefox will have performed
     // an incomplete rendering due to Blockly being invisible.  Rerender.
     Blockly.mainWorkspace.render();
-    button.style.display = "none";
-  } else if (content.id == 'content_xml') {
-    var xmlTextarea = document.getElementById('content_xml');
-    var xmlDom = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
-    var xmlText = Blockly.Xml.domToPrettyText(xmlDom);
-    xmlTextarea.value = xmlText;
-    xmlTextarea.focus();
     button.style.display = "none";
   } else if (content.id == 'content_arduino') {
     //content.innerHTML = Blockly.Arduino.workspaceToCode();
@@ -174,7 +146,6 @@ function setCharacter() {
 
   $("#tab_blocks").text(Blockly.Msg.BLOCKS);
   $("#tab_arduino").text(Blockly.Msg.ARDUINO);
-  $("#tab_xml").text(Blockly.Msg.XML);
 
   $("#get-app").attr("data-tooltip",Blockly.Msg.DOWNLOAD_CHROME_APP);
   $("#go-to-sample").attr("data-tooltip",Blockly.Msg.GO_TO_SAMPLE);
@@ -186,23 +157,6 @@ function setCharacter() {
   $("#save").attr("data-tooltip",Blockly.Msg.SAVE_XML);
   $("#fakeload").attr("data-tooltip",Blockly.Msg.LOAD_XML);
 }
-
-function loadfile() {
-  var obj1 = document.getElementById("load");
-  var obj2 = document.getElementById("content_xml");
-  obj1.addEventListener("change", function (evt) {
-    var file = evt.target.files;
-    //FileReaderの作成
-    var reader = new FileReader();
-    // 読み込み成功時に実行されるイベント
-    reader.onload = function (e) {
-      obj2.value = reader.result;
-    };
-    // 読み込みを開始する（テキスト文字列を得る）
-    reader.readAsText(file[0]);
-    alert(file[0].name + "を取得しました。");
-  }, false);
-};
 
 function loadxml(){
   var id = getid();
@@ -308,7 +262,6 @@ function setScript() {
   firstScript.parentNode.insertBefore(script, firstScript);
   script.onload = function (e) {
     setCharacter();
-    loadfile();
     clipboard();
     init();
     loadxml();
@@ -335,8 +288,6 @@ function change_lang(){
     return $(this).val();
   }).get();
   //mapの結果がjQueryオブジェクトの配列で返ってくるので、get()で生配列を取得する。
-
-  //var val = obj.options[obj.selectedIndex].value;
   $.cookie("lang", val, {
     expires: 7
   });
