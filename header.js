@@ -13,6 +13,8 @@ var filepath = { media: 'media/', msg_ja:"msg/js/ja.js", msg_en: "msg/js/en.js",
   html += '<script type="text/javascript" src="js/spin.js"></script>';
   html += '<script type="text/javascript" src="js/FileSaver.min.js"></script>';
   html += '<script type="text/javascript" src="js/blockly_helper.js"></script>';
+  html += '<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>';
+  html += '<script type="text/javascript" src="js/materialize.min.js"></script>';
   html += '<script type="text/javascript" src="js/jquery.xdomainajax.js"></script>';
   html += '<script type="text/javascript" src="js/jquery.cookie.js"></script>';
   html += '<script type="text/javascript" src="js/init.js"></script>';
