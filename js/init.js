@@ -192,7 +192,7 @@ function sendChrome(url){
     var result = confirm("Send XML for ChromeApp.");
     if(result){
       var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
-      chrome.runtime.sendMessage(extId, {data:{url : url}});
+      chrome.runtime.sendMessage(extId, {url : url});
     }else{
       setXmlContent(url);
     }
