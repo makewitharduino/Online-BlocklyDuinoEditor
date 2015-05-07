@@ -163,7 +163,9 @@ function loadxml(){
   if(typeof id === "undefined") return;
   id = id.replace("#","");
   var url = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
-  sendChrome(url);
+  if(!sendChrome(url)){
+    setXmlContent(url);
+  }
 };
 
 function setXmlContent(url){
@@ -193,10 +195,10 @@ function sendChrome(url){
     if(result){
       var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
       chrome.runtime.sendMessage(extId, {url : url});
-    }else{
-      setXmlContent(url);
+      return true;
     }
   }
+  return false;
 }
 
 function clipboard() {
