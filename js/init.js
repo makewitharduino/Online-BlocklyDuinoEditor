@@ -159,12 +159,11 @@ function setCharacter() {
 }
 
 function loadxml(){
-  var id = getid();
+  var id = getParam()["id"];
   if(typeof id === "undefined") return;
+  id = id.replace("#","");
   var url = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
-  if(!sendChrome(url)){
-    setXmlContent(url);
-  }
+  sendChrome(url);
 };
 
 function setXmlContent(url){
@@ -192,30 +191,12 @@ function sendChrome(url){
     // 確認ボタン付きのダイアログボックスを表示する
     var result = confirm("Send XML for ChromeApp.");
     if(result){
-      var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
-      chrome.runtime.sendMessage(extId,{data: { url : url}});
-      return true;
+      var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
+      chrome.runtime.sendMessage(extId, {url : url});
+    }else{
+      setXmlContent(url);
     }
   }
-  return false;
-}
-
-
-function getid() {
-  var categoryKey;
-  var url = location.href;
-  var parameters = url.split("?");
-  if(parameters.length > 1){
-    var params = parameters[1].split("&");
-    var paramsArray = [];
-    for (var i = 0; i < params.length; i++) {
-      var neet = params[i].split("=");
-      paramsArray.push(neet[0]);
-      paramsArray[neet[0]] = neet[1];
-    }
-    categoryKey = paramsArray["id"];
-  }
-  return categoryKey;
 }
 
 function clipboard() {
@@ -231,6 +212,7 @@ function getParam() {
   var categoryKey = "en";
   var url = location.href;
   var parameters = url.split("?");
+  var paramsArray = [];
   if (parameters.length > 1) {
     var params = parameters[1].split("&");
     var paramsArray = [];
@@ -239,9 +221,8 @@ function getParam() {
       paramsArray.push(neet[0]);
       paramsArray[neet[0]] = neet[1];
     }
-    categoryKey = paramsArray["lang"];
   }
-  return categoryKey;
+  return paramsArray;
 }
 
 function setScript() {
@@ -251,8 +232,9 @@ function setScript() {
   var c = $.cookie("lang");
   if(c) var param = c;
   else {
-    param = getParam();
+    param = getParam()["lang"];
     if(typeof param === "undefined") param = "en";
+    param = param.replace("#","");
   }
   script.src = filepath["msg_"+param];
   var str = "#select-lang-"+ param;
