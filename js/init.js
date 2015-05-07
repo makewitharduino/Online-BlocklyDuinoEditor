@@ -191,7 +191,8 @@ function sendChrome(url){
     // 確認ボタン付きのダイアログボックスを表示する
     var result = confirm("Send XML for ChromeApp.");
     if(result){
-      var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
+      //var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
+      var extId = "koagejpgkeghpjollmfpgoemkmblejgc";
       chrome.runtime.sendMessage(extId, {url : url});
     }else{
       setXmlContent(url);
