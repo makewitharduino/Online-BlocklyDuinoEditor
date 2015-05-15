@@ -135,6 +135,7 @@ Blockly.Msg.DOWNLOAD_CHROME_APP = "Download Offline Editor";  // untranslated
 Blockly.Msg.DUPLICATE_BLOCK = "Duplicar";
 Blockly.Msg.ENABLE_BLOCK = "Activar lo blòt";
 Blockly.Msg.ERROR_FILENAME = "Please Entry Filename!";  // untranslated
+Blockly.Msg.ERROR_FILENAME2 = "Filename ErrorFilename Error！";  // untranslated
 Blockly.Msg.ERROR_PARSING_XML = "Error parsing XML";  // untranslated
 Blockly.Msg.EXPAND_ALL = "Desvolopar los blòts";
 Blockly.Msg.EXPAND_BLOCK = "Desvolopar lo blòt";

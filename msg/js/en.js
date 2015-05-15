@@ -135,6 +135,7 @@ Blockly.Msg.DOWNLOAD_CHROME_APP = "Download Offline Editor";
 Blockly.Msg.DUPLICATE_BLOCK = "Duplicate";
 Blockly.Msg.ENABLE_BLOCK = "Enable Block";
 Blockly.Msg.ERROR_FILENAME = "Please Entry Filename!";
+Blockly.Msg.ERROR_FILENAME2 = "Filename ErrorFilename Error！";
 Blockly.Msg.ERROR_PARSING_XML = "Error parsing XML";
 Blockly.Msg.EXPAND_ALL = "Expand Blocks";
 Blockly.Msg.EXPAND_BLOCK = "Expand Block";

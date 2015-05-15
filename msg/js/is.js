@@ -135,6 +135,7 @@ Blockly.Msg.DOWNLOAD_CHROME_APP = "Download Offline Editor";  // untranslated
 Blockly.Msg.DUPLICATE_BLOCK = "Afrita";
 Blockly.Msg.ENABLE_BLOCK = "Virkja kubb";
 Blockly.Msg.ERROR_FILENAME = "Please Entry Filename!";  // untranslated
+Blockly.Msg.ERROR_FILENAME2 = "Filename ErrorFilename Error！";  // untranslated
 Blockly.Msg.ERROR_PARSING_XML = "Error parsing XML";  // untranslated
 Blockly.Msg.EXPAND_ALL = "Opna kubba";
 Blockly.Msg.EXPAND_BLOCK = "Opna kubb";

@@ -135,6 +135,7 @@ Blockly.Msg.DOWNLOAD_CHROME_APP = "Download Offline Editor";  // untranslated
 Blockly.Msg.DUPLICATE_BLOCK = "कॉपी करें";
 Blockly.Msg.ENABLE_BLOCK = "ब्लॉक को सक्षम करें";
 Blockly.Msg.ERROR_FILENAME = "Please Entry Filename!";  // untranslated
+Blockly.Msg.ERROR_FILENAME2 = "Filename ErrorFilename Error！";  // untranslated
 Blockly.Msg.ERROR_PARSING_XML = "Error parsing XML";  // untranslated
 Blockly.Msg.EXPAND_ALL = "ब्लॉक विस्तार करें";
 Blockly.Msg.EXPAND_BLOCK = "ब्लॉक का विस्तार करें";
