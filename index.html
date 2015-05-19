@@ -110,6 +110,27 @@
       <block type="serial_read"></block>
     </category>
     <sep></sep>
+    <category id="category_servo">
+      <block type="servo_write">
+        <value name="ANGLE">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+      <block type="servo_writeus">
+        <value name="ANGLE_US">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+      <block type="servo_read"></block>
+      <block type="servo_attached"></block>
+      <block type="servo_attach"></block>
+      <block type="servo_custom_attach"></block>
+      <block type="servo_detach"></block>
+    </category>
     <category id="category_ultrasonic">
       <block type="ultrasonic_setting"></block>
       <block type="ultrasonic_maxrange"></block>

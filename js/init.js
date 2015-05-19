@@ -130,6 +130,7 @@ function setCharacter() {
   $('#category_initializes').attr('name',Blockly.Msg.CATEGORY_INITIALIZES);
   $('#category_inout').attr('name',Blockly.Msg.CATEGORY_INOUT);
   $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);
+  $('#category_servo').attr('name',Blockly.Msg.CATEGORY_SERVO);
   $('#category_logic').attr('name',Blockly.Msg.CATEGORY_LOGIC);
   $('#category_ultrasonic').attr('name',Blockly.Msg.CATEGORY_ULTRA_SONIC);
   $('#category_lcd').attr('name',Blockly.Msg.CATEGORY_LCD);
