@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "重複 當";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "當值為否時，執行一些語句";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "當值為真時，執行一些語句";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "刪除積木";

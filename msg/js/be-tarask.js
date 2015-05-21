@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "паўтараць, пакул
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "Пакуль значэньне хлусьня, выконваць пэўныя апэрацыі.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "Пакуль значэньне ісьціна, выконваць пэўныя апэрацыі.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "Выдаліць блёк";

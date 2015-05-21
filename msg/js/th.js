@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "ทำซ้ำ ตราบ�
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "ถ้าเงื่อนไขเป็นเท็จ ก็จะทำตามคำสั่งที่กำหนด";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "ถ้าเงื่อนไขเป็นจริง ก็จะทำตามคำสั่งที่กำหนด";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "ลบบล็อก";

@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "herhalen zolang";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "Terwijl een waarde onwaar is de volgende opdrachten uitvoeren.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "Terwijl een waarde waar is de volgende opdrachten uitvoeren.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "Blok verwijderen";

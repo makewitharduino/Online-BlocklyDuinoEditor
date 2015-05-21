@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "επανάλαβε ενώ";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "Ενόσω μια τιμή είναι ψευδής, τότε εκτελεί κάποιες εντολές.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "Ενόσω μια τιμή είναι αληθής, τότε εκτελεί κάποιες εντολές.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "Διέγραψε Το Μπλοκ";

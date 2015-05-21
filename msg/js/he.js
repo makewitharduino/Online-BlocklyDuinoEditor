@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "חזור כל עוד";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "בזמן שהערך שווה לשגוי, תעשה מספר חישובים.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "כל עוד הערך הוא אמת, לעשות כמה פעולות.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "מחק קטע קוד";

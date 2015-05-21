@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "〜のあいだ、くりかえ
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "あたいは false のあいだ、いくつかのステートメントを行います。";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "あたいは true あいだ、いくつかのステートメントを行います。";
 Blockly.Msg.COPY_BUTTON = "プログラムをコピー";
+Blockly.Msg.COPY_DONE = "コピーできたよ！";
 Blockly.Msg.DELETE_ALL1 = "ブロック ";
 Blockly.Msg.DELETE_ALL2 = " こをけしますか？";
 Blockly.Msg.DELETE_BLOCK = "ブロックをけす";

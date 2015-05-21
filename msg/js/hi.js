@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "दोहराएँ जब �
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "जब तक मान फॉल्स है, तब तक कुछ स्टेट्मेंट्स चलाएँ।";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "जब तक मान ट्रू है, तब तक कुछ स्टेट्मेंट्स चलाएँ।";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "ब्लॉक हटाएँ";

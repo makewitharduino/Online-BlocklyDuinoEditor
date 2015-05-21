@@ -206,7 +206,7 @@ function clipboard() {
   var client = new ZeroClipboard(document.getElementById("copy-button"));
   client.on("ready", function (readyEvent) {
     client.on("aftercopy", function (event) {
-      alert("copy done");
+      Materialize.toast(Blockly.Msg.COPY_DONE, 4000);
     });
   });
 };

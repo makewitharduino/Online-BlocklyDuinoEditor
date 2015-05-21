@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "〜の間、繰り返す";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "値は false のあいだ、いくつかのステートメントを行います。";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "値は true のあいだ、いくつかのステートメントを行います。";
 Blockly.Msg.COPY_BUTTON = "コードをクリップコピー";
+Blockly.Msg.COPY_DONE = "コピー完了！";
 Blockly.Msg.DELETE_ALL1 = "ブロック ";
 Blockly.Msg.DELETE_ALL2 = " 個を削除しますか？";
 Blockly.Msg.DELETE_BLOCK = "ブロックを消す";

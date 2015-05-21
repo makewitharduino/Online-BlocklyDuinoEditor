@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "repeat while";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "While a value is false, then do some statements.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "While a value is true, then do some statements.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";
+Blockly.Msg.COPY_DONE = "Copy Done!";
 Blockly.Msg.DELETE_ALL1 = "Delete all ";
 Blockly.Msg.DELETE_ALL2 = " blockls?";
 Blockly.Msg.DELETE_BLOCK = "Delete Block";

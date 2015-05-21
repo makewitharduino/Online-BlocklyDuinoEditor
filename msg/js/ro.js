@@ -109,6 +109,7 @@ Blockly.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "repetă în timp ce";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "În timp ce o valoare este adevărat, atunci face unele declaraţii.";
 Blockly.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "În timp ce o valoare este adevărat, atunci face unele declaraţii.";
 Blockly.Msg.COPY_BUTTON = "Clip Code";  // untranslated
+Blockly.Msg.COPY_DONE = "Copy Done!";  // untranslated
 Blockly.Msg.DELETE_ALL1 = "Delete all ";  // untranslated
 Blockly.Msg.DELETE_ALL2 = " blockls?";  // untranslated
 Blockly.Msg.DELETE_BLOCK = "Șterge Bloc";
