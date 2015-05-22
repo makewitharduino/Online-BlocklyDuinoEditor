@@ -177,8 +177,10 @@ nav .brand-logo{
 @media screen and (max-width: 768px) {
   nav .brand-logo{
     left: 0%;
-    margin-left: 20px;
-    transform: translate(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
     font-size : 20px;
   }
   nav ul a{
@@ -188,9 +190,11 @@ nav .brand-logo{
 
 @media screen and (max-width: 992px) {
   nav .brand-logo{
-    left: 0px;
-    margin-left: 20px;
-    transform: translate(0%);
+    left: 0%;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
 }
 
