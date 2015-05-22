@@ -180,4 +180,7 @@ a.brand-logo{
     margin-left: 0px;
     font-size : 20px;
   }
+  nav ul a{
+    padding:0 5px;
+  }
 }
