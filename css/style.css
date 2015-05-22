@@ -173,3 +173,11 @@ a.hide-link{
 a.brand-logo{
   margin-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  a.brand-logo{
+    left: 90px;
+    margin-left: 0px;
+    font-size : 20px;
+  }
+}
