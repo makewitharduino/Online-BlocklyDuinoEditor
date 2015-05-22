@@ -170,17 +170,27 @@ a.hide-link{
   color:#263238;
 }
 
-a.brand-logo{
+nav .brand-logo{
   margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  a.brand-logo{
-    left: 90px;
-    margin-left: 0px;
+  nav .brand-logo{
+    left: 0%;
+    margin-left: 20px;
+    transform: translate(0%);
     font-size : 20px;
   }
   nav ul a{
     padding:0 5px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  nav .brand-logo{
+    left: 0px;
+    margin-left: 20px;
+    transform: translate(0%);
+  }
+}
+
