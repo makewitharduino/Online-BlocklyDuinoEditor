@@ -160,13 +160,17 @@ function setCharacter() {
 }
 
 function loadxml(){
-  var id = getParam()["id"];
-  if(typeof id === "undefined") return;
-  id = id.replace("#","");
-  var url = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
-  if(!sendChrome(url)){
-    setXmlContent(url);
+  var url = getParam()["url"];
+  if(typeof url === "undefined"){
+    var id = getParam()["id"];
+    if(typeof id === "undefined") return;
+    id = id.replace("#","");
+    url = 'https://raw.githubusercontent.com/makewitharduino/ArduinoSample/master/' + id +'/' + id + '.xml';
+    if(!sendChrome(url)){
+      setXmlContent(url);
+    }
   }
+  setXmlContent(url);
 };
 
 function setXmlContent(url){
@@ -212,7 +216,6 @@ function clipboard() {
 };
 
 function getParam() {
-  var categoryKey = "en";
   var url = location.href;
   var parameters = url.split("?");
   var paramsArray = [];
