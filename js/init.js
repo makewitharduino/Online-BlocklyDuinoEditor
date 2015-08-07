@@ -281,7 +281,21 @@ function change_lang(){
   });
   var loc = window.location;
   window.location = loc.protocol + '//' + loc.host + loc.pathname + '?lang=' + val;
+}
 
+function set_variable(){
+  var input = document.getElementById('dialog_var_name');
+  var newVar = input.value;
+  if (newVar) {
+    newVar = newVar.replace(/[\s\xa0]+/g, ' ').replace(/^ | $/g, '');
+    if (newVar == Blockly.Msg.RENAME_VARIABLE ||
+        newVar == Blockly.Msg.NEW_VARIABLE) {
+      // Ok, not ALL names are legal...
+    }
+    else{
+      Blockly.Variables.renameVariable(Blockly.Msg.Valiable_text, newVar, Blockly.FieldVariable_workspace);
+    }
+  }
 }
 
 function upload() {
