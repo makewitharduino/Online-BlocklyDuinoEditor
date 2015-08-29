@@ -380,6 +380,37 @@
         </value>
       </block>
     </category>
+    <category id="category_i2c_sevenseg">
+      <block type="i2c_sevenseg_begin"></block>
+      <block type ="i2c_sevenseg_writedisplay" ></block>
+      <block type="i2c_sevenseg_print">
+        <value name="NUM">
+          <block type="math_number">
+            <field name="NUM">7777</field>
+          </block>
+        </value>
+      </block>
+      <block type="i2c_sevenseg_writedigitnum">
+        <value name="NUM">
+          <block type="math_number">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="DOTS">
+          <block type="i2c_sevenseg_boolean">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+      <block type="i2c_sevenseg_drawcolon">
+        <value name="DOTS">
+          <block type="i2c_sevenseg_boolean">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+      <block type="i2c_sevenseg_boolean"></block>
+    </category>
     <category id="category_other_sensor">
       <block type="dht_read"></block>
     </category>
