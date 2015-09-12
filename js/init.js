@@ -137,6 +137,7 @@ function setCharacter() {
   $('#category_ethernet_client').attr('name',Blockly.Msg.CATEGORY_ETHERNET_CLIENT);
   $('#category_cloud_service').attr('name',Blockly.Msg.CATEGORY_CLOUD_SERVICE);
   $('#category_ifttt').attr('name',Blockly.Msg.CATEGORY_IFTTT);
+  $('#category_m2x').attr('name',Blockly.Msg.CATEGORY_M2X);
   $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);
   $('#category_servo').attr('name',Blockly.Msg.CATEGORY_SERVO);
   $('#category_logic').attr('name',Blockly.Msg.CATEGORY_LOGIC);
