@@ -126,7 +126,7 @@ function init() {
   }
 }
 
-function setCharacter() {
+/*function setCharacter() {
   $('#category_initializes').attr('name',Blockly.Msg.CATEGORY_INITIALIZES);
   $('#category_inout').attr('name',Blockly.Msg.CATEGORY_INOUT);
   $('#category_digital').attr('name',Blockly.Msg.CATEGORY_DIGITAL);
@@ -138,6 +138,7 @@ function setCharacter() {
   $('#category_cloud_service').attr('name',Blockly.Msg.CATEGORY_CLOUD_SERVICE);
   $('#category_ifttt').attr('name',Blockly.Msg.CATEGORY_IFTTT);
   $('#category_m2x').attr('name',Blockly.Msg.CATEGORY_M2X);
+  $('#category_blynk').attr('name',Blockly.Msg.CATEGORY_BYLNK);
   $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);
   $('#category_servo').attr('name',Blockly.Msg.CATEGORY_SERVO);
   $('#category_logic').attr('name',Blockly.Msg.CATEGORY_LOGIC);
@@ -174,6 +175,7 @@ function setCharacter() {
   $("#save").attr("data-tooltip",Blockly.Msg.SAVE_XML);
   $("#fakeload").attr("data-tooltip",Blockly.Msg.LOAD_XML);
 }
+*/
 
 function loadxml(){
   var url = getParam()["url"];
@@ -320,5 +322,7 @@ function upload() {
 }
 
 window.onload = function () {
+  //category.htmlをいちいち編集するのが面倒なので、外部ファイルにした
+  $("#toolbox").load("./category.html");
   setScript();
 }

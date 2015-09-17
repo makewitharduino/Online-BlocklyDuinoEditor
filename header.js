@@ -17,6 +17,7 @@ var filepath = { media: 'media/', msg_ja:"msg/js/ja.js", msg_en: "msg/js/en.js",
   html += '<script type="text/javascript" src="js/materialize.min.js"></script>';
   html += '<script type="text/javascript" src="js/jquery.xdomainajax.js"></script>';
   html += '<script type="text/javascript" src="js/jquery.cookie.js"></script>';
+  html += '<script type="text/javascript" src="js/setCharacter.js"></script>';
   html += '<script type="text/javascript" src="js/init.js"></script>';
   html += '<script type="text/javascript" src="js/my_materialize.js"></script>';
   html += '<script type="text/javascript" src="js/ZeroClipboard.js"></script>';
