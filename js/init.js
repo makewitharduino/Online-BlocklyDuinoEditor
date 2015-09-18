@@ -189,7 +189,7 @@ function loadxml(){
     }
   }
   setXmlContent(url);
-};
+}
 
 function setXmlContent(url){
   $.ajax({
@@ -231,7 +231,7 @@ function clipboard() {
       Materialize.toast(Blockly.Msg.COPY_DONE, 4000);
     });
   });
-};
+}
 
 function getParam() {
   var url = location.href;
@@ -254,7 +254,8 @@ function setScript() {
   script.type = 'text/javascript';
   script.id = 'msg';
   var c = $.cookie("lang");
-  if(c) var param = c;
+  var param;
+  if(c) param = c;
   else {
     param = getParam()["lang"];
     if(typeof param === "undefined") param = "en";
@@ -271,7 +272,7 @@ function setScript() {
     clipboard();
     init();
     loadxml();
-  }
+  };
 }
 
 function getFiles() {
@@ -285,7 +286,7 @@ function getFiles() {
   //document.write (code);
   return {
     "sketch.ino": code
-  }
+  };
 }
 
 function change_lang(){
@@ -322,7 +323,5 @@ function upload() {
 }
 
 window.onload = function () {
-  //category.htmlをいちいち編集するのが面倒なので、外部ファイルにした
-  $("#toolbox").load("./category.html");
   setScript();
-}
+};
