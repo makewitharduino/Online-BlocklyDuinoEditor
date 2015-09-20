@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <nav>
     <div class="nav-wrapper blue-grey darken-4">
       <a href="./" class="brand-logo">BlocklyDuino Editor</a>
@@ -336,12 +337,22 @@
           </value>
         </block>
         <block type="grove_rgb_lcd_setcolor"></block>
-        <block type="grove_rgb_lcd_setcursor"></block>
+        <block type="grove_rgb_lcd_custom_setcursor">
+          <value name="COL">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="ROW">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+        </block>
         <block type="grove_rgb_lcd_clear"></block>
         <!--block type="lcd_scrolldisplayright"></block-->
         <!--block type="lcd_scrolldisplayleft"></block-->
-        <block type="grove_rgb_lcd_autoscroll"></block>
-        <block type="grove_rgb_lcd_noautoscroll"></block>
+        <block type="grove_rgb_lcd_switch_scroll"></block>
         <!--block type="lcd_lefttoright"></block-->
         <!--block type="lcd_righttoleft"></block-->
         <!--block type="grove_serial_lcd_power"></block-->
@@ -351,7 +362,14 @@
     <category name="Adafruit">
       <category id="category_rgbled">
         <block type="rgbled_begin"></block>
-        <block type="rgbled_setpixelcolor"></block>
+        <!--block type="rgbled_setpixelcolor"></block-->
+        <block type="rgbled_setpixelcolor2">
+          <value name="TARGET">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+        </block>
         <block type="rgbled_custom_setpixelcolor">
           <value name="TARGET">
             <block type="math_number">
@@ -510,6 +528,11 @@
           </value>
         </block>
         <block type="i2c_sevenseg_writedigitnum">
+          <value name="POSITION">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
           <value name="NUM">
             <block type="math_number">
               <field name="NUM">1</field>
@@ -567,12 +590,25 @@
           </block>
         </value>
       </block>
-      <block type="lcd_setcursor"></block>
+      <!--block type="lcd_setcursor"></block-->
+      <block type="lcd_custom_setcursor">
+        <value name="COL">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="ROW">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
       <block type="lcd_clear"></block>
       <!--block type="lcd_scrolldisplayright"></block-->
       <!--block type="lcd_scrolldisplayleft"></block-->
-      <block type="lcd_autoscroll"></block>
-      <block type="lcd_noautoscroll"></block>
+      <block type="lcd_switch_scroll"></block>
+      <!--block type="lcd_autoscroll"></block>
+      <block type="lcd_noautoscroll"></block-->
       <!--block type="lcd_lefttoright"></block-->
       <!--block type="lcd_righttoleft"></block-->
     </category>
@@ -647,15 +683,15 @@
     <category id="category_functions" custom="PROCEDURE"></category>
     <sep></sep>
     <!--category id="category_involt">
-<block type="involt_directmode"></block>
-<block type="involt_chromereceive"></block>
-<block type="involt_sendvalue"></block>
-<block type="involt_receivevalue"></block>
-</category-->
-
+      <block type="involt_directmode"></block>
+      <block type="involt_chromereceive"></block>
+      <block type="involt_sendvalue"></block>
+      <block type="involt_receivevalue"></block>
+    </category-->
   </xml>
-  
+
   <div class="info">
   </div>
 </body>
+
 </html>
