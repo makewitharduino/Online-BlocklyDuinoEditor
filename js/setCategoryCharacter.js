@@ -1,4 +1,4 @@
-function setCharacter() {
+function setCategoryCharacter() {
   $('#category_initializes').attr('name',Blockly.Msg.CATEGORY_INITIALIZES);
   $('#category_inout').attr('name',Blockly.Msg.CATEGORY_INOUT);
   $('#category_digital').attr('name',Blockly.Msg.CATEGORY_DIGITAL);
@@ -33,17 +33,4 @@ function setCharacter() {
   $('#category_variables').attr('name',Blockly.Msg.CATEGORY_VARIABLES);
   $('#category_functions').attr('name',Blockly.Msg.CATEGORY_FUNCTIONS);
   //  $('#category_involt').attr('name',Blockly.Msg.CATEGORY_INVOLT);
-
-  $("#tab_blocks").text(Blockly.Msg.BLOCKS);
-  $("#tab_arduino").text(Blockly.Msg.ARDUINO);
-
-  $("#get-app").attr("data-tooltip",Blockly.Msg.DOWNLOAD_CHROME_APP);
-  $("#go-to-sample").attr("data-tooltip",Blockly.Msg.GO_TO_SAMPLE);
-  $("#change-lang").attr("data-tooltip",Blockly.Msg.CHANGE_LANG);
-  $("#dialog-lang-title").text(Blockly.Msg.DIALOG_LANG_TITLE);
-
-  $("#copy-button").attr("data-tooltip",Blockly.Msg.COPY_BUTTON);
-  $("#discard").attr("data-tooltip",Blockly.Msg.DISCARD);
-  $("#save").attr("data-tooltip",Blockly.Msg.SAVE_XML);
-  $("#fakeload").attr("data-tooltip",Blockly.Msg.LOAD_XML);
 }

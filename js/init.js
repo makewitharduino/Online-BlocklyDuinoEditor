@@ -232,6 +232,23 @@ function setScript() {
   };
 }
 
+function setCharacter(){
+  setCategoryCharacter();
+
+  $("#tab_blocks").text(Blockly.Msg.BLOCKS);
+  $("#tab_arduino").text(Blockly.Msg.ARDUINO);
+
+  $("#get-app").attr("data-tooltip",Blockly.Msg.DOWNLOAD_CHROME_APP);
+  $("#go-to-sample").attr("data-tooltip",Blockly.Msg.GO_TO_SAMPLE);
+  $("#change-lang").attr("data-tooltip",Blockly.Msg.CHANGE_LANG);
+  $("#dialog-lang-title").text(Blockly.Msg.DIALOG_LANG_TITLE);
+
+  $("#copy-button").attr("data-tooltip",Blockly.Msg.COPY_BUTTON);
+  $("#discard").attr("data-tooltip",Blockly.Msg.DISCARD);
+  $("#save").attr("data-tooltip",Blockly.Msg.SAVE_XML);
+  $("#fakeload").attr("data-tooltip",Blockly.Msg.LOAD_XML);
+}
+
 function getFiles() {
   // return {"sketch.ino": Blockly.Generator.workspaceToCode('Arduino') }
   //$('textarea#textarea_arduino').val() //&lt; et &lt;
