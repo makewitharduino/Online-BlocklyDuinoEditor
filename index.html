@@ -75,6 +75,7 @@
               <a href="#" class="hide-link tooltipped" id="copy-button" data-tooltip="I am tooltip" data-clipboard-target="content_arduino" data-clipboard-text="Clip Me!"><i class="small mdi-content-content-copy"></i></a>
               <a href="#" class="hide-link tooltipped" id="discard" onclick="discard()" data-tooltip="I am tooltip"><i class="small mdi-navigation-refresh"></i></a>
               <a href="#" class="hide-link tooltipped" data-tooltip="I am tooltip" id="save" onclick="save()"><i class="small mdi-file-cloud-download"></i></a>
+              <a href="#" class="hide-link tooltipped" data-tooltip="I am tooltip" id="save" onclick="uploadFile()"><i class="small mdi-file-cloud-download"></i></a>
               <a href="#" class="hide-link tooltipped" id="fakeload" data-tooltip="I am tooltip"><i class="small mdi-file-cloud-upload"></i></a>
               <input type="file" id="load" style="display: none;">
             </td>
@@ -308,6 +309,10 @@
     <block type="grove_button"></block>
     <block type="grove_touch"></block>
     <block type="grove_rotary_angle"></block>
+    <block type="grove_ir_receiver_init"></block>
+    <block type="grove_ir_receiver_check_data"></block>
+    <block type="grove_ir_receiver_receive"></block>
+    <block type="grove_ir_receiver_data"></block>
     <!--block type="grove_tilt_switch"></block-->
     <!--block type="grove_thumb_joystick"></block-->
   </category>
@@ -315,6 +320,12 @@
     <block type="grove_led"></block>
     <block type="grove_relay"></block>
     <block type="grove_buzzer"></block>
+    <block type="grove_ir_emitter_send">
+      <value name="DATA">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+    </block>
     <!--block type="grove_rgb_led"></block-->
     <!--block type="grove_motor_shield"></block-->
   </category>
@@ -552,6 +563,31 @@
     </block>
     <block type="i2c_sevenseg_boolean"></block>
   </category>
+</category>
+<category id="category_shield_bot">
+  <block type="shield_bot_setmaxspeed"></block>
+  <block type="shield_bot_setmaxspeed_lr"></block>
+  <block type="shield_bot_move"></block>
+  <block type="shield_bot_drive">
+    <value name="LEFT">
+      <block type="math_number">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <value name="RIGHT">
+      <block type="math_number">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="shield_bot_motor">
+    <value name="DIRECTION">
+      <block type="math_number">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="shield_bot_readsensor"></block>
 </category>
 <category id="category_servo">
   <block type="servo_write">
