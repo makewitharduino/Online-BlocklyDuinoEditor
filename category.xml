@@ -101,6 +101,12 @@
     <!--block type="ethernet_post_request"></block-->
   </category>
 </category>
+<category id="category_interrupts">
+  <block type="interrupts_attach"></block>
+  <block type="interrupts_detach"></block>
+  <block type="interrupts"></block>
+  <block type="interrupts_no"></block>
+</category>
 <sep></sep>
 <category id="category_cloud_service">
   <category id="category_ifttt">
@@ -212,7 +218,7 @@
   </category>
 </category>
 <sep></sep>
-<category name="Grove">
+<category id="category_grove">
   <category id="category_grove_input">
     <block type="grove_button"></block>
     <block type="grove_touch"></block>
@@ -277,7 +283,7 @@
     <!--block type="grove_serial_lcd_effect"></block-->
   </category>
 </category>
-<category name="Adafruit">
+<category id="category_adafruit">
   <category id="category_rgbled">
     <block type="rgbled_begin"></block>
     <!--block type="rgbled_setpixelcolor"></block-->
@@ -580,8 +586,9 @@
       </block>
     </value>
   </block>
-  <block type="controls_whileUntil"></block>
+  <block type="controls_while"></block>
   <block type="controls_flow_statements"></block>
+  <block type="controls_return"></block>
 </category>
 <category id="category_time">
   <block type="millis"></block>
@@ -601,6 +608,7 @@
 </category>
 <category id="category_math">
   <block type="math_number"></block>
+  <block type="cast_number"></block>
   <block type="math_arithmetic"></block>
   <block type="math_single"></block>
   <block type="math_constrain"></block>

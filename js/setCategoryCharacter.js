@@ -4,6 +4,7 @@ function setCategoryCharacter() {
   $('#category_digital').attr('name',Blockly.Msg.CATEGORY_DIGITAL);
   $('#category_analog').attr('name',Blockly.Msg.CATEGORY_ANALOG);
   $('#category_others').attr('name',Blockly.Msg.CATEGORY_OTHERS);
+  $('#category_interrupts').attr('name',Blockly.Msg.CATEGORY_INTERRUPTS);
   $('#category_ethernet').attr('name',Blockly.Msg.CATEGORY_ETHERNET);
   $('#category_ethernet_init').attr('name',Blockly.Msg.CATEGORY_ETHERNET_INIT);
   $('#category_ethernet_client').attr('name',Blockly.Msg.CATEGORY_ETHERNET_CLIENT);
@@ -11,6 +12,8 @@ function setCategoryCharacter() {
   $('#category_ifttt').attr('name',Blockly.Msg.CATEGORY_IFTTT);
   $('#category_m2x').attr('name',Blockly.Msg.CATEGORY_M2X);
   $('#category_blynk').attr('name',Blockly.Msg.CATEGORY_BYLNK);
+  $('#category_grove').attr('name',Blockly.Msg.CATEGORY_GROVE);
+  $('#category_adafruit').attr('name',Blockly.Msg.CATEGORY_ADAFRUIT);
   $('#category_shield_bot').attr('name',Blockly.Msg.CATEGORY_SHIELD_BOT);
   $('#category_serial').attr('name',Blockly.Msg.CATEGORY_SERIAL);
   $('#category_servo').attr('name',Blockly.Msg.CATEGORY_SERVO);
