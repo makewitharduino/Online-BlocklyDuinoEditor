@@ -113,7 +113,8 @@ function init() {
   };
   window.addEventListener('resize', onresize, false);
 
-  var toolbox = document.getElementById('toolbox');
+  //var toolbox = document.getElementById('toolbox');
+  var toolbox = buildtoolBox();
   Blockly.inject(document.getElementById('content_blocks'),{
     grid:
     {spacing: 25,
@@ -125,12 +126,49 @@ function init() {
     toolbox: toolbox});
 
     auto_save_and_restore_blocks();
+    setCheckbox();
 
   //load from url parameter (single param)
   //http://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
   var dest = unescape(location.search.replace(/^.*\=/, '')).replace(/\+/g, " ");
   if (dest) {
     //load_by_url(dest);
+  }
+}
+
+function buildtoolBox() {
+  var loadIds;
+  var base = "category_logic,category_loops,category_array,category_math,category_text,category_variables,category_functions,category_sep,category_initializes,category_inout,category_time,category_serial,category_interrupts,category_sep";
+
+  var option = window.localStorage.toolboxids;
+
+  // set the default toolbox if none
+  if (option === undefined || option === "") {
+      loadIds = base;
+  }else{
+      loadIds = base + ',' + option;
+  }
+
+  //window.localStorage.toolboxids = loadIds;
+
+  var xmlValue = '<xml id="toolbox">';
+  var xmlids = loadIds.split(",");
+  for (var i = 0; i < xmlids.length; i++) {
+    if ($('#'+xmlids[i]).length) {
+      xmlValue += $('#'+xmlids[i])[0].outerHTML;
+    }
+  }
+  xmlValue += '</xml>';
+
+  return xmlValue;
+};
+
+function setCheckbox(){
+  var option = window.localStorage.toolboxids;
+
+  var options = option.split(",");
+  for (var i = 0; i < options.length; i++) {
+    $('#chbox_' + options[i]).prop("checked",true);
   }
 }
 
@@ -264,7 +302,13 @@ function getFiles() {
 }
 
 function change_lang(){
-  var val = $('[class="with-gap"]:checked').map(function(){
+  var checkbox = $('.filled-in:checked').map(function() {
+    return $(this).val();
+  }).get();
+  var str = checkbox.join(',');
+  window.localStorage.toolboxids = str;
+
+  var val = $('.with-gap:checked').map(function(){
     //$(this)でjQueryオブジェクトが取得できる。val()で値をvalue値を取得。
     return $(this).val();
   }).get();

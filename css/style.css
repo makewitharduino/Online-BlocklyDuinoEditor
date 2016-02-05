@@ -20,12 +20,12 @@ body {
 td.tabon {
   border-bottom-color: #ddd !important;
   background-color: #ddd;
-  padding: 5px 19px;
+  padding: 5px 10px;
 }
 
 td.taboff {
   cursor: pointer;
-  padding: 5px 19px;
+  padding: 5px 10px;
 }
 
 td.taboff:hover {

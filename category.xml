@@ -107,7 +107,7 @@
   <block type="interrupts"></block>
   <block type="interrupts_no"></block>
 </category>
-<sep></sep>
+<sep id="category_sep"></sep>
 <category id="category_cloud_service">
   <category id="category_ifttt">
     <block type="text">
@@ -478,30 +478,40 @@
     <block type="i2c_sevenseg_boolean"></block>
   </category>
 </category>
-<category id="category_shield_bot">
-  <block type="shield_bot_setmaxspeed"></block>
-  <block type="shield_bot_setmaxspeed_lr"></block>
-  <block type="shield_bot_move"></block>
-  <block type="shield_bot_drive">
-    <value name="LEFT">
-      <block type="math_number">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-    <value name="RIGHT">
-      <block type="math_number">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-  </block>
-  <block type="shield_bot_motor">
-    <value name="DIRECTION">
-      <block type="math_number">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-  </block>
-  <block type="shield_bot_readsensor"></block>
+<category id="category_robot">
+  <category id="category_shield_bot">
+    <block type="shield_bot_setmaxspeed"></block>
+    <block type="shield_bot_setmaxspeed_lr"></block>
+    <block type="shield_bot_move"></block>
+    <block type="shield_bot_drive">
+      <value name="LEFT">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="RIGHT">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="shield_bot_motor">
+      <value name="DIRECTION">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="shield_bot_readsensor"></block>
+  </category>
+  <category id="category_aerobot">
+    <block type="aerobot_move"></block>
+    <block type="aerobot_rotate"></block>
+    <block type="aerobot_lightsens"></block>
+    <block type="aerobot_distsens"></block>
+    <block type="aerobot_linesens"></block>
+    <block type="aerobot_setled"></block>
+  </category>
 </category>
 <category id="category_servo">
   <block type="servo_write">
