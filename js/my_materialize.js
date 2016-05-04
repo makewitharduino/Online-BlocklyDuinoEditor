@@ -4,4 +4,5 @@ $(document).ready(function () {
   $('select').material_select();
   $(".button-collapse").sideNav();
   $('.tooltipped').tooltip({delay: 1500});
+  $(".dropdown-button").dropdown();
 });

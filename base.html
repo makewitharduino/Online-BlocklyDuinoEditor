@@ -4,6 +4,7 @@
 <head>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -18,11 +19,11 @@
         <div class="nav-wrapper blue-grey darken-4">
             <a href="./" class="brand-logo">BlocklyDuino Editor</a>
             <ul class="right show-on-small">
-                <li><a class="tooltipped" href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb" target="_blank" id="get-app" data-tooltip="I am tooltip"><i class="mdi-action-get-app"></i></a>
+                <li><a class="tooltipped" href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb" target="_blank" id="get-app" data-tooltip="I am tooltip"><i class="material-icons">get_app</i></a>
                 </li>
-                <li><a class="tooltipped" href="http://lets.makewitharduino.com" target="_blank" id="go-to-sample" data-tooltip="I am tooltip"><i class="mdi-action-receipt"></i></a>
+                <li><a class="tooltipped" href="http://lets.makewitharduino.com" target="_blank" id="go-to-sample" data-tooltip="I am tooltip"><i class="material-icons">receipt</i></a>
                 </li>
-                <li><a class="waves-effect waves-light modal-trigger tooltipped" id="change-lang" href="#modal1" data-tooltip="I am tooltip"><i class="mdi-action-settings"></i></a>
+                <li><a class="waves-effect waves-light modal-trigger tooltipped" id="change-lang" href="#modal1" data-tooltip="I am tooltip"><i class="material-icons">settings</i></a>
                 </li>
             </ul>
         </div>
@@ -125,7 +126,43 @@
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">CANCEL</a>
         </div>
     </div>
+    
+    <!-- modal_import Structure -->
+    <div id="modal_import" class="modal">
+        <div class="modal-content">
+            <div class="input-field">
+                <textarea id="textarea_import" class="materialize-textarea"></textarea>
+                <label id="textarea_import_label" for="textarea_import">Import XML</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a id="dialog_var_ok" href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" onclick="import_xml()">OK</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">CANCEL</a>
+        </div>
+    </div>
 
+    <!-- modal_import Structure -->
+    <div id="modal_export" class="modal">
+        <div class="modal-content">
+            <div class="input-field">
+                <textarea id="textarea_export" class="materialize-textarea"></textarea>
+                <label id="textarea_export_label" for="textarea_export">Export XML</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a id="dialog_var_ok" href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+        </div>
+    </div>
+    
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a class="modal-trigger" href="#modal_import" id="button_import">Import</a>
+        </li>
+        <li class="divider"></li>
+        <li><a class="modal-trigger" href="#!" id="button_export" onclick="export_xml()">Export</a>
+        </li>
+    </ul>
+    
     <table id="main">
         <tr>
             <td>
@@ -136,10 +173,11 @@
                         <td id="tab_arduino" class="taboff" onclick="tabClick('arduino')"></td>
                         <td class="tabmin">&nbsp;</td>
                         <td class="tabmax">
-                            <a href="#" class="hide-link tooltipped" id="copy-button" data-tooltip="I am tooltip" data-clipboard-target="content_arduino" data-clipboard-text="Clip Me!"><i class="small mdi-content-content-copy"></i></a>
-                            <a href="#" class="hide-link tooltipped" id="discard" onclick="discard()" data-tooltip="I am tooltip"><i class="small mdi-navigation-refresh"></i></a>
-                            <a href="#" class="hide-link tooltipped" data-tooltip="I am tooltip" id="save" onclick="save()"><i class="small mdi-file-cloud-download"></i></a>
-                            <a href="#" class="hide-link tooltipped" id="fakeload" data-tooltip="I am tooltip"><i class="small mdi-file-cloud-upload"></i></a>
+                            <a href="#" class="hide-link tooltipped" id="copy-button" data-tooltip="I am tooltip" data-clipboard-target="content_arduino" data-clipboard-text="Clip Me!"><i class="small material-icons">content_copy</i></a>
+                            <a href="#" class="hide-link tooltipped" id="discard" onclick="discard()" data-tooltip="I am tooltip"><i class="small material-icons">delete</i></a>
+                            <a href="#" class="hide-link tooltipped" data-tooltip="I am tooltip" id="save" onclick="save()"><i class="small material-icons">cloud_download</i></a>
+                            <a href="#" class="hide-link tooltipped" id="fakeload" data-tooltip="I am tooltip"><i class="small material-icons">cloud_upload</i></a>
+                            <a class="hide-link dropdown-button" href="#" data-activates="dropdown1"><i class="small material-icons">arrow_drop_down</i></a>
                             <input type="file" id="load" style="display: none;" />
                         </td>
                     </tr>

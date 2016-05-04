@@ -340,6 +340,30 @@ function upload() {
   arduinoTextarea.value = Blockly.Generator.workspaceToCode('Arduino');
 }
 
+function export_xml(){
+  var xml = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+  var data = Blockly.Xml.domToText(xml);
+  data = data.replace(/\r?\n/g,'');
+  $('#textarea_export').val(data);
+  $('#textarea_export').trigger('autoresize');
+  $('#modal_export').openModal();
+}
+
+function import_xml(){
+  var xml = $('#textarea_import').val();
+  $('#textarea_import').val("");
+  var xmlDoc = Blockly.Xml.textToDom(xml);
+  // Blockly.mainWorkspace.clear();
+  Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, xmlDoc);
+}
+
 window.onload = function () {
   setScript();
 };
+
+$(document).ready(function(){
+  $('#textarea_export').focus(function(){
+    $(this).select();
+  });
+  $('#textarea_import').val("");
+});
