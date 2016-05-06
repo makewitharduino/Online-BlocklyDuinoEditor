@@ -130,6 +130,13 @@ pre.content {
   margin-right: 5px;
 }
 
+.modal{
+  z-index: 999;
+}
+
+.dropdown-content{
+  min-width: 200px;  
+} 
 
 .info {
   font-family: monospace;

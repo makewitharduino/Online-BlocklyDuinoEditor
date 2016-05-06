@@ -280,6 +280,15 @@ function setCharacter(){
   $("#go-to-sample").attr("data-tooltip",Blockly.Msg.GO_TO_SAMPLE);
   $("#change-lang").attr("data-tooltip",Blockly.Msg.CHANGE_LANG);
   $("#dialog-lang-title").text(Blockly.Msg.DIALOG_LANG_TITLE);
+  $("#dialog-block-title").text(Blockly.Msg.DIALOG_BLOCK_TITLE);
+  
+  $("#button_import").text(Blockly.Msg.BUTTON_IMPORT);
+  $("#button_export").text(Blockly.Msg.BUTTON_EXPORT);
+  $('#textarea_import_label').text(Blockly.Msg.TEXTAREA_IMPORT_LABEL);
+  $('#textarea_export_label').text(Blockly.Msg.TEXTAREA_EXPORT_LABEL);
+  $('#dialog_import_ok').text(Blockly.Msg.DIALOG_IMPORT_OK);
+  $('#dialog_import_cancel').text(Blockly.Msg.DIALOG_IMPORT_CANCEL);
+  $('#dialog_export_ok').text(Blockly.Msg.DIALOG_EXPORT_OK);
 
   $("#copy-button").attr("data-tooltip",Blockly.Msg.COPY_BUTTON);
   $("#discard").attr("data-tooltip",Blockly.Msg.DISCARD);
