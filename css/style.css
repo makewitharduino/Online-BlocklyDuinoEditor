@@ -97,6 +97,11 @@ pre.content {
   border-top: none !important;
 }
 
+input.blocklyhtmlinput {
+  background-color: white;
+  height: initial;
+}
+
 #content_xml {
   background-color: #073642;
   color: #eee8d5;
