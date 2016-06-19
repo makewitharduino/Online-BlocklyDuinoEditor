@@ -510,6 +510,40 @@
         </block>
         <block type="rgbled_show"></block>
     </category>
+    <category id="category_neopixel">
+        <block type="neopixel_begin"></block>
+        <!--block type="neopixel_setpixelcolor"></block-->
+        <block type="neopixel_setpixelcolor">
+            <value name="TARGET">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+        </block>
+        <block type="neopixel_custom_setpixelcolor">
+            <value name="TARGET">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="R">
+                <block type="math_number">
+                    <field name="NUM">255</field>
+                </block>
+            </value>
+            <value name="G">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="B">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+        </block>
+        <block type="neopixel_show"></block>
+    </category>
     <category id="category_i2c_matrix">
         <block type="i2c_matrix_begin"></block>
         <block type="i2c_matrix_clear"></block>

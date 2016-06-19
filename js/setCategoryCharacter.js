@@ -27,6 +27,7 @@ function setCategoryCharacter() {
   $('#category_grove_sensor').attr('name',Blockly.Msg.CATEGORY_GROVE_SENSOR);
   $('#category_adafruit').attr('name',Blockly.Msg.CATEGORY_ADAFRUIT);
   $('#category_rgbled').attr('name',Blockly.Msg.CATEGORY_RGBLED);
+  $('#category_neopixel').attr('name',Blockly.Msg.CATEGORY_NEOPIXEL);
   $('#category_i2c_matrix').attr('name',Blockly.Msg.CATEGORY_I2C_MATRIX);
   $('#category_i2c_sevenseg').attr('name',Blockly.Msg.CATEGORY_I2C_SEVENSEG);
   $('#category_mpr121').attr('name',Blockly.Msg.CATEGORY_MPR121);
@@ -55,6 +56,7 @@ function setCategoryCharacter() {
   $('label[for="chbox_category_lcd"]').text(Blockly.Msg.CATEGORY_LCD);
   $('label[for="chbox_category_lcd_rgb"]').text(Blockly.Msg.CATEGORY_GROVE_LCD_RGB);
   $('label[for="chbox_category_rgbled"]').text(Blockly.Msg.CATEGORY_RGBLED);
+  $('label[for="chbox_category_neopixel"]').text(Blockly.Msg.CATEGORY_NEOPIXEL);
   $('label[for="chbox_category_i2c_matrix"]').text(Blockly.Msg.CATEGORY_I2C_MATRIX);
   $('label[for="chbox_category_i2c_sevenseg"]').text(Blockly.Msg.CATEGORY_I2C_SEVENSEG);
   $('label[for="chbox_category_other_sensor"]').text(Blockly.Msg.CATEGORY_OTHER_SENSOR);
