@@ -646,7 +646,7 @@
     <block type="controls_for">
         <value name="FROM">
             <block type="math_number">
-                <field name="NUM">1</field>
+                <field name="NUM">0</field>
             </block>
         </value>
         <value name="TO">
@@ -655,7 +655,13 @@
             </block>
         </value>
     </block>
-    <block type="controls_while"></block>
+    <block type="controls_while">
+        <value name="BOOL">
+            <block type="logic_boolean">
+                <field name="BOOL">TRUE</field>
+            </block>
+        </value>
+    </block>
     <block type="controls_flow_statements"></block>
     <block type="controls_return"></block>
 </category>
