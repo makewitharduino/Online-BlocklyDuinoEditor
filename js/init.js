@@ -165,10 +165,11 @@ function buildtoolBox() {
 
 function setCheckbox(){
   var option = window.localStorage.toolboxids;
-
-  var options = option.split(",");
-  for (var i = 0; i < options.length; i++) {
-    $('#chbox_' + options[i]).prop("checked",true);
+  if(option){
+    var options = option.split(',');
+    for (var i = 0; i < options.length; i++) {
+      $('#chbox_' + options[i]).prop('checked',true);
+    }
   }
 }
 
@@ -230,13 +231,13 @@ function clipboard() {
 
 function getParam() {
   var url = location.href;
-  var parameters = url.split("?");
+  var parameters = url.split('?');
   var paramsArray = [];
   if (parameters.length > 1) {
-    var params = parameters[1].split("&");
+    var params = parameters[1].split('&');
     var paramsArray = [];
     for (var i = 0; i < params.length; i++) {
-      var neet = params[i].split("=");
+      var neet = params[i].split('=');
       paramsArray.push(neet[0]);
       paramsArray[neet[0]] = neet[1];
     }
