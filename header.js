@@ -20,7 +20,7 @@ var filepath = { media: 'media/', msg_ja:"msg/js/ja.js", msg_en: "msg/js/en.js",
   html += '<script type="text/javascript" src="js/setCategoryCharacter.js"></script>';
   html += '<script type="text/javascript" src="js/init.js"></script>';
   html += '<script type="text/javascript" src="js/my_materialize.js"></script>';
-  html += '<script type="text/javascript" src="js/ZeroClipboard.js"></script>';
+  html += '<script type="text/javascript" src="js/clipboard.min.js"></script>';
   html += "<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-280456-16', 'auto');ga('send', 'pageview');</script>";
   document.write(html);
 })();
