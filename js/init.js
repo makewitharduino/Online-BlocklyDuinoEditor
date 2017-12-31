@@ -43,7 +43,7 @@ function renderContent() {
     Blockly.mainWorkspace.render();
     button.style.display = "none";
   } else if (content.id == 'content_arduino') {
-    content.innerHTML = Blockly.Arduino.workspaceToCode();
+    // content.innerHTML = Blockly.Arduino.workspaceToCode();
     var arduinoTextarea = document.getElementById('content_arduino');
     arduinoTextarea.value = Blockly.Arduino.workspaceToCode();
     //IEでフォーカスさせると、navバーが消えるため
